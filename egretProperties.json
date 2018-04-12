@@ -1,0 +1,41 @@
+{
+	"native": {
+		"path_ignore": []
+	},
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "bin-release"
+	},
+	"egret_version": "5.1.9",
+	"eui": {
+		"exmlRoot": [
+			"resource/eui_skins"
+		],
+		"themes": [
+			"resource/default.thm.json"
+		],
+		"exmlPublishPolicy": "commonjs"
+	},
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "res"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "puremvc",
+			"path": "../3rdparty-libs/puremvc"
+		}
+	]
+}
