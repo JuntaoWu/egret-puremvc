@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.settingScreenSkin" minHeight="230" minWidth="640" xmlns:e="http://ns.egret.com/eui"
+        xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image left="0" right="0" bottom="0" top="0" source="setting_background" scale9Grid="15,1,13,1" />
+	<e:Button id="closeButton" skinName="skin.components.closeButtonSkin" right="0" top="0" />
+	<e:Button id="howtoplayButton" skinName="skin.components.buttonSkin" label="?" />
+	<e:ToggleButton id="musicButton" skinName="skin.components.musicButtonSkin" x="200" y="160" />
+	<e:ToggleButton id="soundButton" skinName="skin.components.soundButtonSkin" x="200" y="260" />
+	<e:Button id="moreButton" skinName="skin.components.buttonSkin" x="33" y="200" label="more" />
+	<e:Button id="aboutButton" skinName="skin.components.buttonSkin" x="33" y="300" label="about" />
+	<e:Button id="yesButton" skinName="skin.components.buttonSkin" label="Yes" x="33" y="400"/>
+	<e:Button id="noButton" skinName="skin.components.buttonSkin" label="No" x="33" y="500"/>
+	<e:Button id="resumeButton" skinName="skin.components.returnButtonSkin" x="233" y="500" />
+	<e:Button id="restartButton" skinName="skin.components.retryButtonSkin" x="133" y="500" />
+	<e:Button id="quitButton" skinName="skin.components.retryButtonSkin" x="333" y="500" />
+</e:Skin>

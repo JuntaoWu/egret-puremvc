@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.components.soundButtonSkin"
+        states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="sound_normal" source.down="sound_down" source.upAndSelected="sound_non_normal"
+	         source.downAndSelected="sound_non_down" />
+</e:Skin>

@@ -10,10 +10,10 @@
 	"egret_version": "5.1.9",
 	"eui": {
 		"exmlRoot": [
-			"resource/eui_skins"
+			"resource/components"
 		],
 		"themes": [
-			"resource/default.thm.json"
+			"resource/default.theme.json"
 		],
 		"exmlPublishPolicy": "commonjs"
 	},
@@ -22,16 +22,19 @@
 			"name": "egret"
 		},
 		{
-			"name": "game"
+			"name": "eui"
 		},
 		{
-			"name": "res"
+			"name": "assetsmanager"
 		},
 		{
 			"name": "tween"
 		},
 		{
-			"name": "eui"
+			"name": "game"
+		},
+		{
+			"name": "promise"
 		},
 		{
 			"name": "puremvc",

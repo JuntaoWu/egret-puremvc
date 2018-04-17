@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.aboutSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui">
+	<e:Image left="0" right="0" bottom="0" top="0" source="about_background" scale9Grid="2,2,12,12" />
+	<e:Label fontFamily="Arial" bold="true" textColor="0x004F5D" horizontalCenter="0" top="159" size="22"
+	         text="www.egret-labs.org" />
+	<e:Label fontFamily="Arial" bold="true" horizontalCenter="0" textColor="0x004F5D" top="196" size="23"
+	         text="Copyright © 2014" />
+	<e:Image source="about_logo" horizontalCenter="0" top="24" />
+	<e:Image source="about_logo2" horizontalCenter="0" bottom="141" />
+	<e:Button id="backButton" label="Back" width="446" horizontalCenter="0" bottom="49" />
+	<e:Label textColor="9803157" fontFamily="Arial" size="12" horizontalCenter="0" bottom="21" text="version:1.0.0" />
+	<e:Label text="Egret Games" textColor="20317" bold="true" fontFamily="Arial" horizontalCenter="0" top="118" />
+</e:Skin>

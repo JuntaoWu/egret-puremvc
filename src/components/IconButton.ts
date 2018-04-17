@@ -10,7 +10,7 @@ module game {
 
         public constructor() {
             super();
-            this.skinName = "skin/components/IconButtonSkin";
+            this.skinName = "skin.components.iconButtonSkin";
         }
     }
 }

@@ -25,22 +25,38 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-class LoadingUI extends eui.Component {
+class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
+
+    private textField: egret.TextField;
 
     public constructor() {
         super();
-        this.skinName = "LoadingUISkin";
+        this.createView();
+        // this.skinName = "LoadingUISkin";
     }
 
-    /**
-     * 进度条
-     */
-    public progressBar: eui.ProgressBar;
+    private createView(): void {
+        this.textField = new egret.TextField();
+        this.addChild(this.textField);
+        this.textField.y = 300;
+        this.textField.width = 640;
+        this.textField.height = 100;
+        this.textField.textAlign = "center";
+    }
 
-    public setProgress(current: number, total: number): void {
-        if (this.progressBar) {
-            this.progressBar.maximum = total;
-            this.progressBar.value = current;
-        }
+    // /**
+    //  * 进度条
+    //  */
+    // public progressBar: eui.ProgressBar;
+
+    // public setProgress(current: number, total: number): void {
+    //     if (this.progressBar) {
+    //         this.progressBar.maximum = total;
+    //         this.progressBar.value = current;
+    //     }
+    // }
+
+    public onProgress(current: number, total: number): void {
+        this.textField.text = `Loading...${current}/${total}`;
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.gameMenuSkin" minHeight="100" minWidth="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Image left="0" right="0" bottom="0" top="0" source="menubackground" scale9Grid="2,2,12,12" />
+	<e:Image source="highscore" x="128" y="82" />
+	<e:Label fontFamily="Arial" bold="true" textColor="6194096" x="164" y="84" text="HIGH SCORE:" size="20" />
+	<e:Label id="highScoreLabel" fontFamily="Arial" bold="true" textColor="0x5E83B0" text="1560" x="300" y="84" size="20" />
+	<e:Label id="scoreLabel" fontFamily="Arial" bold="true" textColor="0x5E83B0" text="15" x="350" y="84" size="20" />
+	<e:Label id="levelLabel" fontFamily="Arial" bold="true" textColor="0x5E83B0" text="EASY" x="409" y="84" size="20" />
+	<e:Button id="pauseButton" skinName="skin.components.pauseButtonSkin" />
+</e:Skin>

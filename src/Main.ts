@@ -25,7 +25,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-class Main extends egret.Sprite {
+class Main extends eui.UILayer {
 
     /**
      * 加载进度界面
@@ -34,66 +34,78 @@ class Main extends egret.Sprite {
 
     public constructor() {
         super();
-        this.addEventListener(egret.Event.ADDED_TO_STAGE, this.init, this)
     }
 
     private appContainer: game.AppContainer;
 
-    private init(event: egret.Event): void {
-        //设置自定义的屏幕适配方式
-        egret.sys.screenAdapter = new AutoScreenAdapter();
+    protected createChildren() {
+        super.createChildren();
 
-        //注入自定义的解析器
+        egret.lifecycle.addLifecycleListener((context) => {
+            // custom lifecycle plugin
+        })
 
+        egret.lifecycle.onPause = () => {
+            egret.ticker.pause();
+        }
 
-        //初始化UIStage
-        this.appContainer = new game.AppContainer();
-        this.addChild(this.appContainer);
+        egret.lifecycle.onResume = () => {
+            egret.ticker.resume();
+        }
 
-        //初始化Resource资源加载库
-        RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
-        RES.loadConfig("resource/resource.json", "resource/");
+        let assetAdapter = new AssetAdapter();
+        egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
+        egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
+
+        this.runGame().catch(e => {
+            console.log(e);
+        });
     }
 
-    /**
-     * 配置文件加载完成,开始预加载preload资源组。
-     */
-    private onConfigComplete(event: RES.ResourceEvent): void {
-        RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
-        RES.loadGroup("loading", 1);
-        RES.loadGroup("preload");
+    private async runGame() {
+        await this.loadResource();
+
+        this.createGameScene();
     }
-    /**
-     * preload资源组加载完成
-     */
-    private onResourceLoadComplete(event: RES.ResourceEvent): void {
-        if (event.groupName == "loading") {
-            //设置加载进度界面
-            this.loadingView = new LoadingUI();
-            this.appContainer.addChild(this.loadingView);
+
+    private async loadResource() {
+        try {
+            const loadingView = new LoadingUI();
+            this.stage.addChild(loadingView);
+
+            await RES.loadConfig("resource/resource.json", "resource/");
+            await this.loadTheme();
+
+            await RES.loadGroup("loading", 1);
+            await RES.loadGroup("preload", 0, loadingView);
+
+            this.stage.removeChild(loadingView);
         }
-        else if (event.groupName == "preload") {
-            this.appContainer.removeChild(this.loadingView);
-            RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
-            RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
-            this.createGameScene();
+        catch (e) {
+            console.error(e);
         }
     }
-    /**
-     * preload资源组加载进度
-     */
-    private onResourceProgress(event: RES.ResourceEvent): void {
-        if (event.groupName == "preload") {
-            this.loadingView.setProgress(event.itemsLoaded, event.itemsTotal);
-        }
+
+    private loadTheme() {
+        return new Promise((resolve, reject) => {
+            // load skin theme configuration file, you can manually modify the file. And replace the default skin.
+            //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
+            let theme = new eui.Theme("resource/default.theme.json", this.stage);
+            theme.addEventListener(eui.UIEvent.COMPLETE, () => {
+                resolve();
+            }, this);
+        })
     }
 
     /**
      * 创建游戏场景
      */
     private createGameScene(): void {
+        //初始化UIStage
+        //todo: check if new AppContainer must be constructed after Resource Loaded.
+        this.appContainer = new game.AppContainer();
+        this.addChild(this.appContainer);
+
         //设置模态层透明度,写在这里是因为初始化的时候UIStage还没初始化完毕，直接设置会报错
         // eui.PopUpManager.modalAlpha = 0;
 
