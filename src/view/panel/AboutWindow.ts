@@ -8,7 +8,7 @@ module game {
 
         public constructor() {
             super();
-            this.skinName = "skin/AboutSkin";
+            this.skinName = "skin.aboutSkin";
         }
 
         public backButton: eui.Button;

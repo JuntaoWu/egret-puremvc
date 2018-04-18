@@ -2,7 +2,7 @@
 <e:Skin class="skin.endScreenSkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui">
 	<e:Image left="0" right="0" bottom="0" top="0" source="about_background" scale9Grid="2,2,12,12" />
 	<e:Label fontFamily="Arial" bold="true" textColor="0x004F5D" horizontalCenter="0" top="159" size="22"
-	         text="www.egret-labs.org" />
+	         text="www.hzsdgames.org" />
 	<e:Label fontFamily="Arial" bold="true" horizontalCenter="0" textColor="0x004F5D" top="196" size="23"
 	         text="Copyright © 2014" />
 	<e:Button id="backButton" label="Back" width="446" horizontalCenter="0" bottom="49" />

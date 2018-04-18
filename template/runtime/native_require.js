@@ -11,7 +11,7 @@ var game_file_list = [
 	"libs/modules/promise/promise.js",
 	"libs/modules/puremvc/puremvc.js",
 	"bin-debug/model/common/Level.js",
-	"bin-debug/view/panel/TileUI.js",
+	"bin-debug/ApplicationFacade.js",
 	"bin-debug/AutoScreenAdapter.js",
 	"bin-debug/LoadingUI.js",
 	"bin-debug/Main.js",
@@ -29,7 +29,7 @@ var game_file_list = [
 	"bin-debug/model/GameProxy.js",
 	"bin-debug/model/GridProxy.js",
 	"bin-debug/model/common/CommonData.js",
-	"bin-debug/ApplicationFacade.js",
+	"bin-debug/AssetAdapter.js",
 	"bin-debug/model/vos/TileVO.js",
 	"bin-debug/utils/ObjectPool.js",
 	"bin-debug/view/ApplicationMediator.js",
@@ -47,7 +47,7 @@ var game_file_list = [
 	"bin-debug/view/panel/HowtoplayWindow.js",
 	"bin-debug/view/panel/SettingWindow.js",
 	"bin-debug/view/panel/StartScreen.js",
-	"bin-debug/AssetAdapter.js",
+	"bin-debug/view/panel/TileUI.js",
 	//----auto game_file_list end----
 ];
 

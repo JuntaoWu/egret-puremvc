@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "about_background,button_json,setting_background,settingscreen_json,start_background,start_logo,gamemenu_json,sence_background,tile_json,end_background,end_close_png,end_cloud_png,end_sun_png,default.theme_json",
+			"keys": "about_background,button_json,setting_background,settingscreen_json,start_background,start_logo,gamemenu_json,sence_background,tile_json,end_background,end_close_png,end_cloud_png,end_sun_png,default.theme_json,button_down_png,button_up_png",
 			"name": "preload"
 		},
 		{
@@ -89,6 +89,16 @@
 			"name": "default.theme_json",
 			"type": "json",
 			"url": "default.theme.json"
+		},
+		{
+			"name": "button_down_png",
+			"type": "image",
+			"url": "assets/button_down.png"
+		},
+		{
+			"name": "button_up_png",
+			"type": "image",
+			"url": "assets/button_up.png"
 		}
 	]
 }

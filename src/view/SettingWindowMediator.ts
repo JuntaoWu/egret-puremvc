@@ -25,7 +25,7 @@ module game {
 
         private aboutButtonClick(event: egret.TouchEvent): void {
             var about: AboutWindow = new AboutWindow();
-            this.settingWindow.addChild(about);
+            this.settingWindow.parent.addChild(about);
         }
 
         private resumeButtonClick(event: egret.TouchEvent): void {

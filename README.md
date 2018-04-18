@@ -1,35 +1,21 @@
-#### 写在前面 
+#### Egret & PureMVC 
 
-本游戏使用Egret的GUI进行开发，不涉及Egret基础部分内容。本实例强烈建议结合GUIExample和深入浅出EGRET GUI系列教程来学习。
+本游戏使用Egret结合PureMVC开发，旨在提供一个轻量级游戏基础模板。
 
-要了解Egret基础部分的内容请参考下面：
+原始工程Fork自f111fei的2048demo, 但因为原版demo所使用的框架版本较老，本工程有多处改动：
 
-* [ 官方引导 ](https://github.com/egret-labs/egret-core)
-* [ NeoGuo的教程 ](https://github.com/NeoGuo/html5-documents/tree/master/egret)
+* [ 2048egret ](https://github.com/f111fei/2048egret)
 
+参考教程：
 
-Egret GUI 相关教程：
-
-* [ 官方DEMO ](https://github.com/egret-labs/egret-examples/tree/master/GUIExample)
-* [ 深入浅出EGRET GUI (一):皮肤分离机制 ](http://bbs.egret-labs.org/thread-43-1-1.html)
-* [ 深入浅出EGRET GUI (二):失效验证机制 ](http://bbs.egret-labs.org/thread-73-1-1.html)
-* [ 深入浅出EGRET GUI (三):AFL自适应流式布局 ](http://bbs.egret-labs.org/thread-102-1-1.html)
-
----
-
-2048是最近很火的一个小游戏，[原版](http://gabrielecirulli.github.io/2048/) 就是用JavaScript写的。恰巧最近Egret PublicBeta，观望和学习了一阵后，发现egret正好适合开发这类游戏。Egret使用TypeScript作为开发语言，最终编译为JavaScript，正好和原始版本PK一下。
-
-游戏预览：
-
-[2048egret](http://xzper.com/project/2048egret/)
-
-[PieceOfPie](http://xzper.com/project/pieceofpie/)
+* [ Get Started ](http://developer.egret.com/cn/github/egret-docs/Engine2D/getStarted/helloWorld/index.html)
+* [ Egret Github ](https://github.com/egret-labs)
 
 **1.准备开始**
 
-在开始之前，我们需要学习一下TypeScript和阅读官方的教程从Egret开发环境的部署到创建，编译，发布项目，以及Egret相关工具。在安装好开发环境后，在工作空间目录下使用命令行，创建2048egret新项目
+参考官方的教程从Egret开发环境的部署到创建，编译，发布项目，以及Egret相关工具。在安装好开发环境后，在工作空间目录下使用命令行，创建新项目
 
-	egret create 2048egret
+	egret create egret-puremvc
 
 **2.准备素材**
 
@@ -37,33 +23,45 @@ Egret GUI 相关教程：
 
 **①资源打包**
 
-这里我们用到的资源主要有按钮，背景，文字以及数字这些图片。我们选择把这些图片都打包在一起合成一张大图就像 [这样](http://xzper.com/project/2048egret/resource/assets/source.png) 和 [这样](http://xzper.com/project/2048egret/resource/assets/number.png) 这样做可以减少URL请求数，还能减少资源的体积，把一些具有相同特征的图片放在一起便于管理。在egret里面这种类型的资源就是sheet。只有图片是不够的，还需要一个json描述文件来说明这张图每一张小图片的位置和大小。目前已经有成熟的工具来生成sheet和json。这里我用到的是 [ShoeBox](http://www.renderhjs.net/shoebox/) 配合这个 [插件](https://github.com/runinspring/egretTools) 来生成egret能识别的json。安装好插件后， 将每一张图片命名，然后将这些图片选中拖入Sprites Sheet中然后配置好生成的文件名点击save就能得到一张大图和一个json了，将图片和json放入"resource/assets/"文件夹下以备使用。此外ShoeBox还能读取swf将MovieClip导出为这种大图，按每一帧自动命名，这里的number.png就是这样导出的，下面有原始素材下载地址。
+这里我们用到的资源主要有按钮，背景，文字以及数字这些图片。打包合成的大图在类似 [button.png](/resource/assets/button.png) 和 [gamemenu.png](/resource/assets/gamemenu.png) 的位置。
+在egret里面这种类型的资源就是sheet。只有图片是不够的，还需要一个json描述文件 [button.json](/resource/assets/button.json) 来说明这张图每一张小图片的位置和大小。
+使用 [ShoeBox](http://www.renderhjs.net/shoebox/) 配合这个 [插件](https://github.com/runinspring/egretTools) 来生成egret能识别的json。
+安装好插件后， 将每一张图片命名，然后将这些图片选中拖入Sprites Sheet中然后配置好生成的文件名点击save就能得到一张大图和一个json了，将图片和json放入"resource/assets/"文件夹下以备使用。
+此外ShoeBox还能读取swf将MovieClip导出为这种大图，按每一帧自动命名，这里的number.png就是这样导出的，下面有原始素材下载地址。
 
 **②资源加载**
 
-接下来我们需要生成一个资源描述文件resource.json，在游戏开始之前读取这个json来加载对应的文件。egret的资源加载机制可以参考 [这里](https://github.com/egret-labs/egret-core/wiki/Using%20Resource%20System) 现在已经有 [工具](http://bbs.egret-labs.org/thread-48-1-1.html) 能自动生成这个resource.json了。按照下图配置。**注意：虽然我们的资源有图片，但是对应的json文件已经记录了图片的位置，所以在这个工具中我们不需要添加对应的图片只添加json文件就行了。**
+接下来我们需要创建/生成一个资源描述文件resource.json，在游戏开始之前读取这个json来加载对应的文件。
+如果你使用了Egret Wing，那么你也可以在该IDE内打开resource.json的可视化编辑界面，通过拖动可以将图片，sheet等资源文件加载进resource.json中。
+egret的资源加载机制可以参考 [这里](https://github.com/egret-labs/egret-core/wiki/Using%20Resource%20System)
 
-<center>![](http://xzper.qiniudn.com/2014/06/ResTool.png)</center>
+在项目初始化时，使用RES加载资源，根据Egret Engine 5.1的新模板，在Main.ts中有如下代码：
 
-在项目初始化时，使用RES加载资源，简单明了。
+    private async runGame() {
+        await this.loadResource();
 
-	private onAddToStage(event:egret.Event){
-        ........
-        ........
-        //初始化Resource资源加载库
-        RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE,this.onConfigComplete,this);
-        RES.loadConfig("resource/resource.json","resource/");
+        this.createGameScene();
     }
 
-    /**
-     *配置文件加载完成,开始预加载preload资源组。
-     */
-    private onConfigComplete(event:RES.ResourceEvent):void{
-        RES.removeEventListener(RES.ResourceEvent.CONFIG_COMPLETE,this.onConfigComplete,this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.onResourceLoadComplete,this);
-        RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS,this.onResourceProgress,this);
-        RES.loadGroup("preload");
+    private async loadResource() {
+        try {
+            const loadingView = new LoadingUI();
+            this.stage.addChild(loadingView);
+
+            await RES.loadConfig("resource/resource.json", "resource/");
+            await this.loadTheme();
+
+            await RES.loadGroup("loading", 1);
+            await RES.loadGroup("preload", 0, loadingView);
+
+            this.stage.removeChild(loadingView);
+        }
+        catch (e) {
+            console.error(e);
+        }
     }
+
+通过await RES.loadGroup方法，我们可以不再手动监听加载完成的事件，而是依赖于该Promise的Resolve状态。这样整个执行流更加清晰。
 
 **③资源使用**
 
@@ -73,61 +71,13 @@ Egret GUI 相关教程：
 
 **①修改细节**
 
-默认的文档类是GameApp。我觉得还是叫Main比较亲切，修改类名称，然后修改项目目录下的egretProperties.json文件，将document_class的值改为Main
-
-	{
-	    "document_class" : "Main",
-	    "native": {
-	        "path_ignore": [
-	            "libs"
-	        ]
-	    }
-	}
-
-默认生成的html的背景是黑色的，这里全部改成白色。将index.html里面的背景替换成#ffffff。
-
-默认尺寸是480x800的尺寸。由于我们使用的部分图片宽度大于500，以及部分PC的分辨率太小为了不出现垂直滚动条影响体验，将尺寸换成520x650。这个不影响移动设备上的尺寸，移动设备默认是自适应宽度的。
-
-index.html中
-
-	<div style="display:inline-block;width:100%; height:100%;margin: 0 auto; background: #ffffff; position:relative;" id="gameDiv">
-	    <canvas id="gameCanvas" width="520" height="650" style="background-color: #ffffff"></canvas>
-	</div>
-
-egret_loader.js中
-
-    //设置屏幕适配策略
-    egret.StageDelegate.getInstance().setDesignSize(520, 650);
-    context.stage = new egret.Stage();
-    var scaleMode =  egret.MainContext.deviceType == egret.MainContext.DEVICE_MOBILE ? egret.StageScaleMode.SHOW_ALL : egret.StageScaleMode.NO_SCALE;
-    context.stage.scaleMode = scaleMode;
+此处已将原工程的相关index.html等文件替换为使用IDE生成的模板代码，以利用新的动态加载JS脚本的特性。
 
 **③引入第三方库pureMVC**
 
-这次我们要使用到一个mvc开发框架-pureMVC，熟悉as3的朋友一定也对这个框架不陌生吧。不熟悉的也没关系，这个框架不是这次的主角。我们从 [这里](https://github.com/PureMVC/puremvc-typescript-standard-framework) 下载pureMVC的TypeScript版本。得到puremvc-typescript-standard-1.0.d.ts 和 puremvc-typescript-standard-1.0.js这两个文件，其实.d.ts就类似于c++里面的.h头文件，只有空方法和空属性，真正的实现是在js文件或者ts文件里面。在项目里面的src文件夹下建立一个puremvc的文件夹，将这个js文件和d.ts文件放进去。然后在项目根目录下建立一个puremvc.json的文件内容如下
+Egret引入第三方库的方式迭代过多次，详细步骤参考 [创建第三方库](https://github.com/JuntaoWu/egret-puremvc/tree/master/doc/create-3rdparty-libs-for-egret.pdf)
 
-	{
-	    "name": "puremvc",
-	    "source":"src/puremvc/",
-	    "file_list": [
-	        "puremvc-typescript-standard-1.0.js",
-	        "puremvc-typescript-standard-1.0.d.ts"
-	    ]
-	}
-
-这样就表示配置了一个第三方模块。之后在编译器编译时会把相应的模块对应的js文件夹编译进libs文件夹下。项目里面我们还使用了gui模块，这些模块的配置是在egretProperties.json中，部分代码如下
-
-	"modules": [
-		{
-			"name": "core"
-		},
-		{
-			"name": "gui"
-		},
-        {
-            "name": "puremvc","path":"."
-        }
-	],
+注意这里使用到了一个JavaScript模块转换工具uRequire，参考 [uRequire官网](http://www.urequire.org/)，使用该工具的目的是将AMD模块转换为UMD模块并导出全局变量。
 
 **④注入AssetAdapter和SkinAdapter**
 
