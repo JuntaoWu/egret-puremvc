@@ -12,20 +12,19 @@ module game {
 
             //为PC和移动端设置不同的移动策略
             if (egret.MainContext.deviceType != egret.MainContext.DEVICE_MOBILE) {
-                var self = this;
-                document.addEventListener("keydown", function (event: KeyboardEvent) {
+                document.addEventListener("keydown", (event: KeyboardEvent) => {
                     switch (event.keyCode) {
                         case 38:
-                            self.doMove(0);
+                            this.doMove(0);
                             break;
                         case 39:
-                            self.doMove(1);
+                            this.doMove(1);
                             break;
                         case 40:
-                            self.doMove(2);
+                            this.doMove(2);
                             break;
                         case 37:
-                            self.doMove(3);
+                            this.doMove(3);
                             break;
                     }
                 });
@@ -37,6 +36,7 @@ module game {
 
         private downPoint: egret.Point;
         private movePoint: egret.Point;
+        
         private mouseDownHandle(event: egret.TouchEvent): void {
             this.gamescreen.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.stage_mouseMoveHandler, this);
             this.gamescreen.stage.addEventListener(egret.TouchEvent.TOUCH_END, this.stage_mouseUpHandler, this);

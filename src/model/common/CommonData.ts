@@ -11,13 +11,22 @@ module game {
 		/**
 		 * 游戏的大小
 		 */
-        public static get size(): number {
+        public static get size(): { width: number, height: number } {
             if (CommonData.level == Level.EASY)
-                return 6;
+                return {
+                    width: 4,
+                    height: 5
+                };
             else if (CommonData.level == Level.NORMAL)
-                return 5;
+                return {
+                    width: 4,
+                    height: 5
+                };
             else if (CommonData.level == Level.SPECIAL)
-                return 4;
+                return {
+                    width: 4,
+                    height: 5
+                };
         }
 
         /**

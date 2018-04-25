@@ -3,6 +3,12 @@
 module game {
 
 	export class TileVO {
+
+		/**
+		 * UnitType
+		 */
+		public type: string;
+
 		/**
 		 * 列
 		 */
@@ -19,6 +25,16 @@ module game {
 		public value: number;
 
 		/**
+		 * HP
+		 */
+		public hp: number;
+
+		/**
+		 * 攻击
+		 */
+		public attack: number;
+
+		/**
 		 * 是否已合并
 		 */
 		public merged: boolean;
@@ -27,14 +43,18 @@ module game {
 		 */
 		public previousPosition: any;
 
-		public constructor() {
+		public constructor(x: number = 0, y: number = 0, value: number = 0, unitType: string = UnitType.Hero) {
+			this.x = x;
+			this.y = y;
+			this.value = value;
+			this.type = unitType;
 		}
 
 		public clone(): TileVO {
-			var tileVO: TileVO = new TileVO();
-			tileVO.x = this.x;
-			tileVO.y = this.y;
-			tileVO.value = this.value;
+			var tileVO: TileVO = new TileVO(this.x, this.y, this.value, this.type);
+			tileVO.attack = this.attack;
+			tileVO.hp = this.hp;
+			
 			if (this.previousPosition) {
 				tileVO.previousPosition = { "x": this.previousPosition.x, "y": this.previousPosition.y };
 			}

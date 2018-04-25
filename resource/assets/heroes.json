@@ -1,0 +1,162 @@
+{
+    "hero(1)": {
+        "attack": 1,
+        "hp": 1
+    },
+    "hero(2)": {
+        "attack": 1,
+        "hp": 2
+    },
+    "hero(3)": {
+        "attack": 1,
+        "hp": 3
+    },
+    "hero(4)": {
+        "attack": 1,
+        "hp": 4
+    },
+    "hero(5)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "hero(6)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "hero(7)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "hero(8)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "hero(9)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "hero(10)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "hero(11)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "hero(12)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "hero(13)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "hero(14)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "hero(15)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "hero(16)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "hero(17)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "hero(18)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "hero(19)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "hero(20)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "enemy(1)": {
+        "attack": 1,
+        "hp": 1
+    },
+    "enemy(2)": {
+        "attack": 1,
+        "hp": 2
+    },
+    "enemy(3)": {
+        "attack": 1,
+        "hp": 3
+    },
+    "enemy(4)": {
+        "attack": 1,
+        "hp": 4
+    },
+    "enemy(5)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "enemy(6)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "enemy(7)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "enemy(8)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "enemy(9)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "enemy(10)": {
+        "attack": 1,
+        "hp": 5
+    },
+    "enemy(11)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "enemy(12)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "enemy(13)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "enemy(14)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "enemy(15)": {
+        "attack": 1,
+        "hp": 6
+    },
+    "enemy(16)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "enemy(17)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "enemy(18)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "enemy(19)": {
+        "attack": 1,
+        "hp": 7
+    },
+    "enemy(20)": {
+        "attack": 1,
+        "hp": 7
+    }
+}

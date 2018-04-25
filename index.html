@@ -72,6 +72,7 @@ data-show-fps="false" data-show-log="false" data-log-filter="" data-show-fps-sty
              * }
              **/
 			egret.runEgret({
+				scaleMode: 'fixedWidth',
 				renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
 					var backingStore = context.backingStorePixelRatio ||
 						context.webkitBackingStorePixelRatio ||

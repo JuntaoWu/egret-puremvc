@@ -68,24 +68,25 @@ module game {
          * 合并格子
          */
         public mergedTile(tileVO: TileVO): void {
-            var tileFrom: TileUI = this.getTileUI(tileVO.previousPosition.x, tileVO.previousPosition.y);
+            if (tileVO.hp) {
+                return;
+            }
             var tileTo: TileUI = this.getTileUI(tileVO.x, tileVO.y);
-            if (tileFrom && tileTo) {
-                this.tileGroup.setChildIndex(tileFrom, 0);  //将要消失的格子沉底，
+            if (tileTo) {
+                this.tileGroup.setChildIndex(tileTo, 0);  //将要消失的格子沉底，
                 var self: GameScene = this;
-                tileFrom.location.x = -1;
-                tileFrom.location.y = -1;
-                tileFrom.playmove(tileVO.x * (tileFrom.width + this.gap) + tileFrom.width / 2, tileVO.y * (tileFrom.height + this.gap) + tileFrom.height / 2);
-                var moveComplete: Function = function (event: egret.Event): void {
-                    tileFrom.removeEventListener("moveComplete", moveComplete, self);
-                    if (tileFrom.parent)
-                        self.tileGroup.removeChild(tileFrom);
-                    ObjectPool.getPool("game.TileUI").returnObject(tileFrom);   //回收到对象池
-                    tileTo.value = tileVO.value;
-                    self.tileGroup.setChildIndex(tileTo, self.tileGroup.numChildren - 1);  //将要缩放的格子置顶，
+                tileTo.location.x = -1;
+                tileTo.location.y = -1;
+                tileTo.playmove(tileVO.x * (tileTo.width + this.gap) + tileTo.width / 2, tileVO.y * (tileTo.height + this.gap) + tileTo.height / 2);
+                var moveComplete: Function = (event: egret.Event): void => {
+                    tileTo.removeEventListener("moveComplete", moveComplete, self);
+                    this.tileGroup.setChildIndex(tileTo, self.tileGroup.numChildren - 1);  //将要缩放的格子置顶，
                     tileTo.playScale(true);
+                    if (tileTo.parent)
+                        this.tileGroup.removeChild(tileTo);
+                    ObjectPool.getPool("game.TileUI").returnObject(tileTo);   //回收到对象池
                 };
-                tileFrom.addEventListener("moveComplete", moveComplete, this);
+                tileTo.addEventListener("moveComplete", moveComplete, this);
             }
         }
 
@@ -129,14 +130,14 @@ module game {
          * 格子的大小
          */
         private get tileSize(): number {
-            return (560 - (CommonData.size + 1) * this.gap) / CommonData.size;
+            return (Constants.PlayZoneWidth - (CommonData.size.width + 1) * this.gap) / CommonData.size.width;
         }
 
         /**
          * 间距
          */
         private get gap(): number {
-            return 0;
+            return Constants.Gap;
         }
 
     }

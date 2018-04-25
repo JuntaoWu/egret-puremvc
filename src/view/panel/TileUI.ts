@@ -2,10 +2,16 @@
 
 module game {
 
-    export class TileUI extends egret.Bitmap {
+    export class TileUI extends egret.Sprite {
+
+        private hp: number = 0;
+        private bitmap: egret.Bitmap;
+        public unitType: string = UnitType.Hero;
 
         public constructor() {
             super();
+            this.bitmap = new egret.Bitmap();
+            this.addChild(this.bitmap);
             //使描点在中心
             this.location = { "x": 0, "y": 0 };
         }
@@ -32,8 +38,7 @@ module game {
         }
 
         private updateValue(): void {
-            var mi: number = Math.log(this._value) / Math.log(2);
-            this.texture = RES.getRes("tile_" + mi)
+            this.bitmap.texture = RES.getRes(`${this.unitType}(${this._value})`);
         }
 
 		/**
@@ -62,6 +67,15 @@ module game {
             egret.Tween.get(this).to({ x: xTo, y: yTo }, 100).call(function (): void {
                 self.dispatchEvent(new egret.Event("moveComplete"));
             }, this);
+        }
+
+        public playDead() {
+            var data = RES.getRes("effects.json");
+            var txtr = RES.getRes("effects.png");
+            var mcFactory: egret.MovieClipDataFactory = new egret.MovieClipDataFactory(data, txtr);
+            var mc1: egret.MovieClip = new egret.MovieClip(mcFactory.generateMovieClipData("mc1"));
+            this.addChild(mc1);
+            mc1.gotoAndPlay("start", 1);
         }
     }
 }

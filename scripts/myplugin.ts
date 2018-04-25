@@ -12,6 +12,6 @@ export class CustomPlugin implements plugins.Command {
     }
 
     async onFinish(commandContext: plugins.CommandContext) {
-
+        commandContext.buildConfig.projectConfig.scaleMode = 'fixedWidth';
     }
 }

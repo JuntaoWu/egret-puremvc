@@ -25,12 +25,12 @@ module game {
         /**
          * 格子合并了
          */
-        public static TILE_MERGED: string = "tile_merged";
+		public static TILE_MERGED: string = "tile_merged";
 
-		private cells: Array<any> = [];
-		private startTiles: number = 2;
+		private cells: Array<Cell[]> = [];
+		private startTiles: number = 4;
 		private playerTurn: boolean = true;
-		private size: number;
+		private size: { width: number, height: number };
 
 		public constructor() {
 			super(GridProxy.NAME);
@@ -40,14 +40,11 @@ module game {
 		 * 初始化数据
 		 */
 		public reset(): void {
-            this.size = CommonData.size;
-			this.cells = [];
-			for (var x: number = 0; x < this.size; x++) {
-				var row: Array<any> = [];
-				this.cells.push(row);
-				for (var y: number = 0; y < this.size; y++) {
-					row.push(null);
-				}
+			this.size = CommonData.size;
+			this.cells = new Array();
+			for (var row: number = 0; row < this.size.height; row++) {
+				let array: Array<Cell> = new Array(this.size.width).fill(null);
+				this.cells.push(array);
 			}
 			this.playerTurn = true;
 			this.sendNotification(GridProxy.TILE_RESET);
@@ -70,23 +67,15 @@ module game {
 					var farthestPosition: any = this.findFarthestPosition({ "x": tile.x, "y": tile.y }, direction);
 					var nextPosition: any = this.getNextPosition(farthestPosition, direction);
 					var nextTile: TileVO = this.cellContent(nextPosition.x, nextPosition.y);
-					if (nextTile && nextTile.value == tile.value && !nextTile.merged) { //可以向下合并
 
-                        var newValue: number = tile.value + nextTile.value;
+					this.moveTile(tile, farthestPosition.x, farthestPosition.y);
 
-                        this.mergedTile(tile, nextTile);
+					if (nextTile && nextTile.type != tile.type) {
+						//发动攻击
+						this.mergedTile(tile, nextTile);
 
-                        tile.x = nextTile.x;
-						tile.y = nextTile.y;
-
-						//更新分数
-						score += newValue;
-
-						if (newValue >= CommonData.winValue) {   //游戏结束
-							won = true;
-						}
-					} else {
-						this.moveTile(tile, farthestPosition.x, farthestPosition.y);
+						// tile.x = nextTile.x;
+						// tile.y = nextTile.y;
 					}
 
 					if (tile.x != tile.previousPosition.x || tile.y != tile.previousPosition.y) {  //格子移动了
@@ -96,21 +85,21 @@ module game {
 				}
 			}
 
-            if (score > 0) {
-                this.sendNotification(GameCommand.UPDATE_SCORE, score);
-            }
-            if (!won) {
-                if (moved) {
-                    this.computerMove();
-                }
-                if (!this.movesAvailable()) {
-                    this.sendNotification(GameCommand.FINISH_GAME, false);
-                }
+			if (score > 0) {
+				this.sendNotification(GameCommand.UPDATE_SCORE, score);
+			}
+			if (!won) {
+				if (moved) {
+					//this.computerMove();
+				}
+				if (!this.movesAvailable()) {
+					this.sendNotification(GameCommand.FINISH_GAME, false);
+				}
 
-            }
-            else {
-                this.sendNotification(GameCommand.FINISH_GAME, true);
-            }
+			}
+			else {
+				this.sendNotification(GameCommand.FINISH_GAME, true);
+			}
 		}
 
 		/**
@@ -129,10 +118,10 @@ module game {
 			var vector: any = this.getVector(direction);
 			var xReverse: boolean = (vector.x == 1) ? true : false;
 			var yReverse: boolean = (vector.y == 1) ? true : false;
-			var x: number = xReverse ? (this.size - 1) : 0;
-			while (x >= 0 && x < this.size) {
-				var y: number = yReverse ? (this.size - 1) : 0;
-				while (y >= 0 && y < this.size) {
+			var x: number = xReverse ? (this.size.width - 1) : 0;
+			while (x >= 0 && x < this.size.width) {
+				var y: number = yReverse ? (this.size.height - 1) : 0;
+				while (y >= 0 && y < this.size.height) {
 					arr.push(this.cellContent(x, y));
 					y = y + (yReverse ? -1 : 1);
 				}
@@ -166,9 +155,9 @@ module game {
 		 * 存储移动前状态
 		 */
 		private prepareTiles(): void {
-			for (var x: number = 0; x < this.size; x++) {
-				for (var y: number = 0; y < this.size; y++) {
-					var tile: TileVO = <TileVO><any>(this.cells[x][y]);
+			for (var row: number = 0; row < this.size.height; row++) {
+				for (var col: number = 0; col < this.size.width; col++) {
+					var tile: TileVO = <TileVO><any>(this.cells[row][col]);
 					if (tile) {
 						tile.merged = false;
 						tile.previousPosition = { "x": tile.x, "y": tile.y };
@@ -181,21 +170,25 @@ module game {
 		 * 添加游戏开始的格子
 		 */
 		public addStartTiles(): void {
-			for (var i: number = 0; i < this.startTiles; i++) {
+			for (let i: number = 0; i < this.startTiles; i++) {
 				this.addRandomTile();
+			}
+			for (let i: number = 0; i < this.startTiles; i++) {
+				this.addRandomTile(UnitType.Enemy);
 			}
 		}
 
 		/**
 		 * 随机添加一个格子
 		 */
-		private addRandomTile(): void {
+		private addRandomTile(unitType: string = UnitType.Hero): void {
 			if (this.cellsAvailable()) {
-				var position: any = this.randomAvailableCell;
-				var tile: TileVO = new TileVO();
-				tile.x = position.x;
-				tile.y = position.y;
-				tile.value = Math.random() < 0.9 ? 2 : 4;
+				const position: any = this.getRandomAvailableCell();
+				const heroId = Math.ceil(Math.random() * 20);
+				let tile: TileVO = new TileVO(position.x, position.y, heroId, unitType);
+				let hero = this.getHeroByName(`${unitType}(${heroId})`);
+				tile = Object.assign(tile, hero);
+
 				this.insertTile(tile);
 			}
 		}
@@ -204,9 +197,9 @@ module game {
 		 * 是否能够继续游戏
 		 */
 		public movesAvailable(): boolean {
-			for (var i: number = 0; i < this.size; i++) {
-				for (var j: number = 0; j < this.size; j++) {
-					var tile: TileVO = <TileVO><any>(this.cells[i][j]);
+			for (var row: number = 0; row < this.size.height; row++) {
+				for (var col: number = 0; col < this.size.width; col++) {
+					var tile: TileVO = <TileVO><any>(this.cells[row][col]);
 					if (tile) {
 						for (var direction: number = 0; direction < 4; direction++) {
 							var nextPosition: any = this.getNextPosition({ "x": tile.x, "y": tile.y }, direction);
@@ -255,7 +248,7 @@ module game {
 		 */
 		private cellContent(x: number, y: number): TileVO {
 			if (this.withinBounds(x, y)) {
-				return <TileVO><any>(this.cells[x][y]);
+				return <TileVO><any>(this.cells[y][x]);
 			} else {
 				return null;
 			}
@@ -265,7 +258,7 @@ module game {
 		 * 检查位置是否合法
 		 */
 		private withinBounds(x: number, y: number): boolean {
-			return x >= 0 && x < this.size && y >= 0 && y < this.size;
+			return x >= 0 && x < this.size.width && y >= 0 && y < this.size.height;
 		}
 
         /**
@@ -274,21 +267,26 @@ module game {
          * @param x
          * @param y
          */
-        private mergedTile(tileFrom: TileVO, tileTo: TileVO): void {
-            //创建新格子
-            var mergedTile: TileVO = new TileVO();
-            mergedTile.x = tileTo.x;
-            mergedTile.y = tileTo.y;
-            mergedTile.previousPosition = { x: tileFrom.x, y: tileFrom.y };
-            mergedTile.value = tileFrom.value + tileTo.value;
-            mergedTile.merged = true;
+		private mergedTile(tileFrom: TileVO, tileTo: TileVO): void {
+			tileTo.hp -= tileFrom.attack;
 
-            //更新格子
-            this.cells[tileFrom.x][tileFrom.y] = null;
-            this.cells[tileTo.x][tileTo.y] = mergedTile;
+			// //创建新格子
+			// var mergedTile: TileVO = new TileVO();
+			// mergedTile.x = tileTo.x;
+			// mergedTile.y = tileTo.y;
+			// mergedTile.previousPosition = { x: tileFrom.x, y: tileFrom.y };
+			// mergedTile.value = tileFrom.value + tileTo.value;
+			// mergedTile.merged = true;
 
-            this.sendNotification(GridProxy.TILE_MERGED, mergedTile.clone());
-        }
+			//更新格子
+			// this.cells[tileFrom.y][tileFrom.x] = null;
+			if (!tileTo.hp) {
+				this.cells[tileTo.y][tileTo.x] = null;
+				this.addRandomTile(tileTo.type);
+			}
+
+			this.sendNotification(GridProxy.TILE_MERGED, tileTo.clone());
+		}
 
 
 		/**
@@ -298,10 +296,10 @@ module game {
 			if (tile.x == x && tile.y == y) {
 				return;
 			}
-			this.cells[tile.x][tile.y] = null;
+			this.cells[tile.y][tile.x] = null;
 			tile.x = x;
 			tile.y = y;
-			this.cells[tile.x][tile.y] = tile;
+			this.cells[tile.y][tile.x] = tile;
 			this.sendNotification(GridProxy.TILE_MOVE, tile.clone());
 		}
 
@@ -309,7 +307,7 @@ module game {
 		 * 添加一个格子
 		 */
 		private insertTile(tile: TileVO): void {
-			this.cells[tile.x][tile.y] = tile;
+			this.cells[tile.y][tile.x] = tile;
 			this.sendNotification(GridProxy.TILE_INSERT, tile.clone());
 		}
 
@@ -317,7 +315,7 @@ module game {
 		 * 移除一个格子
 		 */
 		private removeTile(tile: TileVO): void {
-			this.cells[tile.x][tile.y] = null;
+			this.cells[tile.y][tile.x] = null;
 			this.sendNotification(GridProxy.TILE_REMOVE, tile.clone());
 		}
 
@@ -336,7 +334,7 @@ module game {
 		/**
 		 * 随机获取一个空格子的位置
 		 */
-		private get randomAvailableCell(): any {
+		private getRandomAvailableCell(): any {
 			var arr: Array<any> = this.availableCells;
 			if (arr.length) {
 				return arr[Math.floor(Math.random() * arr.length)];
@@ -347,16 +345,22 @@ module game {
 		/**
 		 * 所有的空格子的位置
 		 */
-		private get availableCells(): Array<any> {
-			var arr: Array<any> = [];
-			for (var x: number = 0; x < this.size; x++) {
-				for (var y: number = 0; y < this.size; y++) {
-					if (!this.cells[x][y]) {
-						arr.push({ "x": x, "y": y });
+		private get availableCells(): Array<Cell> {
+
+			let arr: Array<Cell> = [];
+			for (let row: number = 0; row < this.size.height; row++) {
+				for (let col: number = 0; col < this.size.width; col++) {
+					if (!this.cells[row][col]) {
+						arr.push({ "x": col, "y": row });
 					}
 				}
 			}
 			return arr;
+		}
+
+		private getHeroByName(name: string): { hp: number, attack: number } {
+			const heroes = RES.getRes("heroes");
+			return heroes[name];
 		}
 
 	}

@@ -1,5 +1,19 @@
 {
   "162d2b416b5": {
     "guideLinesEnabled": false
+  },
+  "global": {
+    "globalBindingDataTestObj": []
+  },
+  "162fae1d2c0": {
+    "guideLinesEnabled": true,
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100,
+    "bindingDataTestObj": []
   }
 }

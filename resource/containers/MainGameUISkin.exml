@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="skin.mainGameUISkin" minHeight="230" minWidth="640" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*">
+<e:Skin class="skin.mainGameUISkin" minHeight="230" minWidth="640" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="162fae1d2c0"/>
 	<e:Image left="0" right="0" bottom="0" top="0" source="sence_background" />
 	<game:GameMenuUI id="gameMenuUI" skinName="skin.gameMenuSkin" />
-	<game:GameScene id="gameSceneUI" left="40" right="40" top="120" bottom="100" />
+	<game:GameScene id="gameSceneUI" left="30" right="30" top="350" bottom="100" />
 </e:Skin>
