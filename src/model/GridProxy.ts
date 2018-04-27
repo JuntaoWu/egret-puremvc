@@ -27,6 +27,11 @@ module game {
          */
 		public static TILE_MERGED: string = "tile_merged";
 
+		/**
+		 * 发动了技能
+		 */
+		public static SKILL_APPLIED: string = "skill_applied";
+
 		private cells: Array<Cell[]> = [];
 		private startTiles: number = 4;
 		private playerTurn: boolean = true;
@@ -72,6 +77,7 @@ module game {
 
 					if (nextTile && nextTile.type != tile.type) {
 						//发动攻击
+						this.applySkill(tile, nextTile);
 						this.mergedTile(tile, nextTile);
 
 						// tile.x = nextTile.x;
@@ -288,6 +294,9 @@ module game {
 			this.sendNotification(GridProxy.TILE_MERGED, tileTo.clone());
 		}
 
+		private applySkill(tileFrom: TileVO, tileTo: TileVO): void {
+			this.sendNotification(GridProxy.SKILL_APPLIED, { tileFrom: tileFrom.clone(), tileTo: tileTo.clone() });
+		}
 
 		/**
 		 * 移动格子

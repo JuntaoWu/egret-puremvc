@@ -16,7 +16,8 @@ module game {
                 GridProxy.TILE_MERGED,
                 GridProxy.TILE_MOVE,
                 GridProxy.TILE_REMOVE,
-                GridProxy.TILE_RESET
+                GridProxy.TILE_RESET,
+                GridProxy.SKILL_APPLIED,
             ];
         }
 
@@ -45,6 +46,9 @@ module game {
                 case GridProxy.TILE_RESET: {
                     this.gameScene.clearTiles();
                     break;
+                }
+                case GridProxy.SKILL_APPLIED: {
+                    this.gameScene.applySkill(data);
                 }
             }
         }

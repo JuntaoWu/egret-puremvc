@@ -68,7 +68,6 @@ module game {
                 params: { x: 10, y: 0.8, z: 0.1 },
                 time: 0
             });
-
         }
 
         public createCompleteEvent(event: eui.UIEvent): void {
@@ -78,6 +77,32 @@ module game {
             this.startBackground.filters = [this.customFilter];
 
             // this.addEventListener(egret.Event.ENTER_FRAME, this.onFilterRender, this);
+            let dragonBone = DragonBones.createDragonBone("cloud_1", "armatureName");
+            this.addChild(dragonBone);
+            dragonBone.animation.play();
+
+            let dragonBone2 = DragonBones.createDragonBone("threekingdoms2048", "monster_1001");
+            this.addChild(dragonBone2);
+            dragonBone2.x = 400;
+            dragonBone2.y = 600;
+            let names = dragonBone2.animation.animationNames;
+
+            const playNextAnimation = (index) => {
+
+                if (index >= names.length) {
+                    index = 0;
+                }
+
+                let state = dragonBone2.animation.play(names[index], 1);
+
+                let onComplete = () => {
+                    dragonBone2.removeEventListener(dragonBones.EventObject.COMPLETE, onComplete, this);
+                    playNextAnimation(++index);
+                };
+                dragonBone2.addEventListener(dragonBones.EventObject.COMPLETE, onComplete, this);
+            }
+
+            playNextAnimation(0);
         }
 
         public startBackground: eui.Image;

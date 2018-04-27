@@ -35,6 +35,11 @@ module game {
 		public attack: number;
 
 		/**
+		 * skill
+		 */
+		public skill: string = "hit_1";
+
+		/**
 		 * 是否已合并
 		 */
 		public merged: boolean;
@@ -59,6 +64,7 @@ module game {
 				tileVO.previousPosition = { "x": this.previousPosition.x, "y": this.previousPosition.y };
 			}
 			tileVO.merged = this.merged;
+			tileVO.skill = this.skill;
 			return tileVO;
 		}
 

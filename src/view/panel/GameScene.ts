@@ -64,15 +64,23 @@ module game {
             return null;
         }
 
+        public applySkill({tileFrom, tileTo}: {tileFrom: TileVO, tileTo: TileVO}): void {
+            var tileToUI: TileUI = this.getTileUI(tileTo.x, tileTo.y);
+            if(tileToUI) {
+                tileToUI.playEffect(tileFrom.skill);
+            }
+        }
+
         /**
          * 合并格子
          */
         public mergedTile(tileVO: TileVO): void {
-            if (tileVO.hp) {
-                return;
-            }
             var tileTo: TileUI = this.getTileUI(tileVO.x, tileVO.y);
             if (tileTo) {
+                
+                if (tileVO.hp) {
+                    return;
+                }
                 this.tileGroup.setChildIndex(tileTo, 0);  //将要消失的格子沉底，
                 var self: GameScene = this;
                 tileTo.location.x = -1;

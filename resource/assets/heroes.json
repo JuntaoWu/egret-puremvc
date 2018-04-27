@@ -1,162 +1,202 @@
 {
     "hero(1)": {
         "attack": 1,
-        "hp": 1
+        "hp": 1,
+        "skill": "hit_2"
     },
     "hero(2)": {
         "attack": 1,
-        "hp": 2
+        "hp": 2,
+        "skill": "hit_2"
     },
     "hero(3)": {
         "attack": 1,
-        "hp": 3
+        "hp": 3,
+        "skill": "hit_2"
     },
     "hero(4)": {
         "attack": 1,
-        "hp": 4
+        "hp": 4,
+        "skill": "hit_2"
     },
     "hero(5)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "hit_2"
     },
     "hero(6)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "hit_2"
     },
     "hero(7)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "hit_2"
     },
     "hero(8)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "hit_2"
     },
     "hero(9)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "hit_2"
     },
     "hero(10)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "hit_2"
     },
     "hero(11)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "hit_2"
     },
     "hero(12)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "hit_2"
     },
     "hero(13)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "hit_2"
     },
     "hero(14)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "hit_2"
     },
     "hero(15)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "hit_2"
     },
     "hero(16)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "hit_2"
     },
     "hero(17)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "hit_2"
     },
     "hero(18)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "hit_2"
     },
     "hero(19)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "hit_2"
     },
     "hero(20)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "hit_2"
     },
     "enemy(1)": {
         "attack": 1,
-        "hp": 1
+        "hp": 1,
+        "skill": "huoqiu"
     },
     "enemy(2)": {
         "attack": 1,
-        "hp": 2
+        "hp": 2,
+        "skill": "huoqiu"
     },
     "enemy(3)": {
         "attack": 1,
-        "hp": 3
+        "hp": 3,
+        "skill": "huoqiu"
     },
     "enemy(4)": {
         "attack": 1,
-        "hp": 4
+        "hp": 4,
+        "skill": "huoqiu"
     },
     "enemy(5)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "huoqiu"
     },
     "enemy(6)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "huoqiu"
     },
     "enemy(7)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "huoqiu"
     },
     "enemy(8)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "huoqiu"
     },
     "enemy(9)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "huoqiu"
     },
     "enemy(10)": {
         "attack": 1,
-        "hp": 5
+        "hp": 5,
+        "skill": "huoqiu"
     },
     "enemy(11)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "huoqiu"
     },
     "enemy(12)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "huoqiu"
     },
     "enemy(13)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "huoqiu"
     },
     "enemy(14)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "huoqiu"
     },
     "enemy(15)": {
         "attack": 1,
-        "hp": 6
+        "hp": 6,
+        "skill": "huoqiu"
     },
     "enemy(16)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "huoqiu"
     },
     "enemy(17)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "huoqiu"
     },
     "enemy(18)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "huoqiu"
     },
     "enemy(19)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "huoqiu"
     },
     "enemy(20)": {
         "attack": 1,
-        "hp": 7
+        "hp": 7,
+        "skill": "huoqiu"
     }
 }

@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "about_background,button_json,setting_background,settingscreen_json,start_background,start_logo,gamemenu_json,tile_json,end_background,end_close_png,end_cloud_png,end_sun_png,default.theme_json,button_down_png,button_up_png,unit_json,sence_background,heroes",
+			"keys": "about_background,button_json,setting_background,settingscreen_json,start_background,start_logo,gamemenu_json,tile_json,end_background,end_close_png,end_cloud_png,end_sun_png,default.theme_json,button_down_png,button_up_png,unit_json,sence_background,heroes,cloud_1_ske_json,cloud_1_tex_json,cloud_1_tex_png,threekingdoms2048_tex_json,threekingdoms2048_tex_png,threekingdoms2048_ske_json",
 			"name": "preload"
 		},
 		{
@@ -111,6 +111,36 @@
 			"url": "assets/heroes.json",
 			"type": "json",
 			"name": "heroes"
+		},
+		{
+			"url": "assets/dragonbones/cloud1/cloud_1_ske.json",
+			"type": "json",
+			"name": "cloud_1_ske_json"
+		},
+		{
+			"url": "assets/dragonbones/cloud1/cloud_1_tex.json",
+			"type": "json",
+			"name": "cloud_1_tex_json"
+		},
+		{
+			"url": "assets/dragonbones/cloud1/cloud_1_tex.png",
+			"type": "image",
+			"name": "cloud_1_tex_png"
+		},
+		{
+			"name": "threekingdoms2048_tex_json",
+			"type": "json",
+			"url": "assets/dragonbones/threekingdoms2048_tex.json"
+		},
+		{
+			"name": "threekingdoms2048_tex_png",
+			"type": "image",
+			"url": "assets/dragonbones/threekingdoms2048_tex.png"
+		},
+		{
+			"name": "threekingdoms2048_ske_json",
+			"type": "json",
+			"url": "assets/dragonbones/threekingdoms2048_ske.json"
 		}
 	]
 }

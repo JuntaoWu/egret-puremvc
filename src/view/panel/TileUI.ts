@@ -77,5 +77,11 @@ module game {
             this.addChild(mc1);
             mc1.gotoAndPlay("start", 1);
         }
+
+        public playEffect(skillName) {
+            let dragonBone = DragonBones.createDragonBone("threekingdoms2048", skillName);
+            this.addChild(dragonBone);
+            dragonBone.animation.play();
+        }
     }
 }

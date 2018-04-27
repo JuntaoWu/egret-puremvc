@@ -10,7 +10,7 @@ module game {
         
         public static Gap: number = 1;
 
-        public static PlayZoneWidth: number = 580; 
+        public static PlayZoneWidth: number = 980; 
 
         public static heroesConfig: string = 'heroes';
     }

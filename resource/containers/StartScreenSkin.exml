@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="skin.startScreenSkin" minHeight="230" minWidth="640" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*">
 	<e:Image id="startBackground" left="0" right="0" bottom="0" top="0" source="start_background" scale9Grid="2,2,12,12" />
-	<e:Image x="92" y="23" source="start_logo" />
-	<e:Button id="playButton" skinName="skin.components.playButtonSkin" x="270" y="400" width="100" height="100" />
-	<e:Button id="settingButton" skinName="skin.components.settingButtonSkin" right="25" y="650" />
-	<game:IconButton id="levelButton" right="35" y="750" skinName="skin.components.iconButtonSkin" label="Easy" icon="level_easy" />
+	<e:Image x="253.5" y="487" source="start_logo"  anchorOffsetX="0" width="565" anchorOffsetY="0" height="468"/>
+	<e:Button id="playButton" skinName="skin.components.playButtonSkin" x="462" y="1025" width="156" height="144"  anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Button id="settingButton" skinName="skin.components.settingButtonSkin" right="25" bottom="200" />
+	<game:IconButton id="levelButton" right="35" bottom="100" skinName="skin.components.iconButtonSkin" label="Easy" icon="level_easy" />
 	<e:Label text="Powered By Egret Engine" textColor="4860458" fontFamily="Arial" bold="true" horizontalCenter="0"
 	         bottom="24" />
 </e:Skin>
