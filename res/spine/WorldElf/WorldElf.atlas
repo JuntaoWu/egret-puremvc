@@ -1,0 +1,164 @@
+
+WorldElf.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: true
+  xy: 256, 297
+  size: 209, 208
+  orig: 256, 256
+  offset: 27, 20
+  index: -1
+1_18
+  rotate: true
+  xy: 0, 162
+  size: 213, 207
+  orig: 256, 256
+  offset: 28, 20
+  index: -1
+2_08
+  rotate: false
+  xy: 204, 11
+  size: 157, 145
+  orig: 256, 256
+  offset: 99, 44
+  index: -1
+2_12
+  rotate: false
+  xy: 0, 375
+  size: 256, 131
+  orig: 256, 256
+  offset: 0, 41
+  index: -1
+2_14
+  rotate: false
+  xy: 207, 156
+  size: 230, 141
+  orig: 256, 256
+  offset: 0, 43
+  index: -1
+2_16
+  rotate: false
+  xy: 0, 16
+  size: 204, 146
+  orig: 256, 256
+  offset: 0, 46
+  index: -1
+2_18
+  rotate: true
+  xy: 361, 0
+  size: 156, 141
+  orig: 256, 256
+  offset: 0, 56
+  index: -1
+
+WorldElf2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_04
+  rotate: true
+  xy: 0, 112
+  size: 194, 208
+  orig: 256, 256
+  offset: 28, 22
+  index: -1
+1_12
+  rotate: false
+  xy: 213, 110
+  size: 211, 200
+  orig: 256, 256
+  offset: 28, 28
+  index: -1
+1_14
+  rotate: false
+  xy: 213, 310
+  size: 211, 201
+  orig: 256, 256
+  offset: 29, 27
+  index: -1
+1_16
+  rotate: false
+  xy: 0, 306
+  size: 213, 205
+  orig: 256, 256
+  offset: 28, 22
+  index: -1
+2_02
+  rotate: false
+  xy: 0, 0
+  size: 213, 112
+  orig: 256, 256
+  offset: 21, 86
+  index: -1
+
+WorldElf3.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_02
+  rotate: false
+  xy: 0, 101
+  size: 191, 204
+  orig: 256, 256
+  offset: 28, 21
+  index: -1
+1_06
+  rotate: false
+  xy: 0, 305
+  size: 194, 204
+  orig: 256, 256
+  offset: 28, 26
+  index: -1
+1_10
+  rotate: false
+  xy: 194, 310
+  size: 192, 199
+  orig: 256, 256
+  offset: 28, 30
+  index: -1
+2_00
+  rotate: true
+  xy: 333, 105
+  size: 193, 128
+  orig: 256, 256
+  offset: 0, 71
+  index: -1
+2_04
+  rotate: true
+  xy: 386, 298
+  size: 211, 123
+  orig: 256, 256
+  offset: 45, 73
+  index: -1
+2_10
+  rotate: true
+  xy: 191, 86
+  size: 219, 142
+  orig: 256, 256
+  offset: 37, 40
+  index: -1
+
+WorldElf4.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_08
+  rotate: false
+  xy: 0, 137
+  size: 193, 195
+  orig: 256, 256
+  offset: 28, 35
+  index: -1
+2_06
+  rotate: false
+  xy: 0, 0
+  size: 184, 137
+  orig: 256, 256
+  offset: 72, 56
+  index: -1

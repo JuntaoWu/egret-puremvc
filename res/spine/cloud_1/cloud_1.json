@@ -1,0 +1,39 @@
+{
+"skeleton": { "hash": "hkqjIptiPhqSCUAvIExvpGC24w8", "spine": "3.6.37", "width": 170, "height": 140, "images": "./images/" },
+"bones": [
+	{ "name": "root", "scaleX": -1 },
+	{ "name": "骨骼", "parent": "root", "x": 478.19 }
+],
+"slots": [
+	{ "name": "yunduo1", "bone": "骨骼", "attachment": "yunduo1" }
+],
+"skins": {
+	"default": {
+		"yunduo1": {
+			"yunduo1": { "width": 170, "height": 140 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"yunduo1": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 8.1667, "color": "fffffffe", "curve": "stepped" },
+					{ "time": 40.2333, "color": "fffffffe" },
+					{ "time": 46.7333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"骨骼": {
+				"translate": [
+					{ "time": 0, "x": -19.27, "y": 0 },
+					{ "time": 46.7333, "x": -949.96, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

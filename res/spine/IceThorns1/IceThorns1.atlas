@@ -1,0 +1,83 @@
+
+IceThorns1.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 421, 447
+  size: 39, 54
+  orig: 60, 60
+  offset: 11, 3
+  index: -1
+2_00
+  rotate: true
+  xy: 284, 372
+  size: 129, 137
+  orig: 256, 256
+  offset: 61, 68
+  index: -1
+2_02
+  rotate: false
+  xy: 275, 244
+  size: 129, 128
+  orig: 256, 256
+  offset: 61, 63
+  index: -1
+2_04
+  rotate: true
+  xy: 139, 243
+  size: 130, 136
+  orig: 256, 256
+  offset: 58, 59
+  index: -1
+2_06
+  rotate: false
+  xy: 134, 107
+  size: 132, 136
+  orig: 256, 256
+  offset: 55, 55
+  index: -1
+2_08
+  rotate: false
+  xy: 0, 361
+  size: 139, 140
+  orig: 256, 256
+  offset: 52, 54
+  index: -1
+2_10
+  rotate: true
+  xy: 0, 85
+  size: 136, 134
+  orig: 256, 256
+  offset: 59, 64
+  index: -1
+2_12
+  rotate: false
+  xy: 0, 221
+  size: 134, 140
+  orig: 256, 256
+  offset: 65, 62
+  index: -1
+2_14
+  rotate: true
+  xy: 139, 373
+  size: 128, 145
+  orig: 256, 256
+  offset: 62, 59
+  index: -1
+3_00
+  rotate: false
+  xy: 134, 0
+  size: 112, 107
+  orig: 128, 128
+  offset: 6, 7
+  index: -1
+flash010
+  rotate: true
+  xy: 266, 116
+  size: 127, 125
+  orig: 128, 128
+  offset: 1, 2
+  index: -1

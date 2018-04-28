@@ -1,0 +1,13 @@
+
+cloud_1.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yunduo1
+  rotate: false
+  xy: 0, 30
+  size: 170, 140
+  orig: 170, 140
+  offset: 0, 0
+  index: -1

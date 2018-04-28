@@ -1,0 +1,45 @@
+{
+"skeleton": { "hash": "rUBCAc88TtlyDf4aKKmuO9ddbi0", "spine": "3.6.37", "width": 146, "height": 126, "images": "./images/" },
+"bones": [
+	{ "name": "root", "scaleX": -1 },
+	{ "name": "骨骼", "parent": "root", "x": 478.19 }
+],
+"slots": [
+	{ "name": "yunduo1", "bone": "骨骼", "attachment": "yunduo1" }
+],
+"skins": {
+	"default": {
+		"yunduo1": {
+			"yunduo1": { "width": 146, "height": 126 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"yunduo1": {
+				"color": [
+					{ "time": 0, "color": "fffffffe", "curve": "stepped" },
+					{ "time": 6.2, "color": "fffffffe" },
+					{ "time": 11.3, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 13.7, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 14.2, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 18.5333, "color": "ffffff00" },
+					{ "time": 24.4667, "color": "fffffffe", "curve": "stepped" },
+					{ "time": 28.2667, "color": "fffffffe" }
+				]
+			}
+		},
+		"bones": {
+			"骨骼": {
+				"translate": [
+					{ "time": 0, "x": -441.91, "y": 0 },
+					{ "time": 13.7, "x": -1025.27, "y": 0, "curve": "stepped" },
+					{ "time": 14.2, "x": 158.48, "y": 0 },
+					{ "time": 28.2667, "x": -440.49, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

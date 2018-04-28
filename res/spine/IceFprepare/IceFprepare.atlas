@@ -1,0 +1,179 @@
+
+IceFprepare.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_01
+  rotate: false
+  xy: 0, 333
+  size: 186, 179
+  orig: 200, 200
+  offset: 8, 11
+  index: -1
+1_02
+  rotate: false
+  xy: 186, 157
+  size: 181, 178
+  orig: 200, 200
+  offset: 10, 12
+  index: -1
+1_03
+  rotate: true
+  xy: 0, 158
+  size: 175, 177
+  orig: 200, 200
+  offset: 13, 13
+  index: -1
+1_06
+  rotate: true
+  xy: 186, 335
+  size: 177, 182
+  orig: 200, 200
+  offset: 9, 10
+  index: -1
+1_10
+  rotate: false
+  xy: 368, 252
+  size: 142, 136
+  orig: 200, 200
+  offset: 33, 30
+  index: -1
+1_12
+  rotate: true
+  xy: 264, 3
+  size: 117, 128
+  orig: 200, 200
+  offset: 40, 35
+  index: -1
+1_14
+  rotate: true
+  xy: 129, 1
+  size: 119, 135
+  orig: 200, 200
+  offset: 38, 30
+  index: -1
+1_16
+  rotate: true
+  xy: 368, 388
+  size: 124, 144
+  orig: 200, 200
+  offset: 36, 26
+  index: -1
+1_18
+  rotate: false
+  xy: 0, 1
+  size: 129, 156
+  orig: 200, 200
+  offset: 32, 19
+  index: -1
+1_19
+  rotate: true
+  xy: 367, 120
+  size: 132, 145
+  orig: 200, 200
+  offset: 28, 36
+  index: -1
+
+IceFprepare2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: true
+  xy: 177, 331
+  size: 179, 169
+  orig: 200, 200
+  offset: 14, 11
+  index: -1
+1_04
+  rotate: true
+  xy: 173, 154
+  size: 177, 173
+  orig: 200, 200
+  offset: 10, 11
+  index: -1
+1_05
+  rotate: false
+  xy: 0, 331
+  size: 177, 179
+  orig: 200, 200
+  offset: 9, 9
+  index: -1
+1_07
+  rotate: false
+  xy: 0, 153
+  size: 173, 178
+  orig: 200, 200
+  offset: 10, 14
+  index: -1
+1_09
+  rotate: true
+  xy: 346, 349
+  size: 161, 162
+  orig: 200, 200
+  offset: 17, 27
+  index: -1
+1_11
+  rotate: true
+  xy: 256, 13
+  size: 141, 130
+  orig: 200, 200
+  offset: 32, 35
+  index: -1
+1_15
+  rotate: false
+  xy: 386, 83
+  size: 121, 139
+  orig: 200, 200
+  offset: 38, 28
+  index: -1
+1_17
+  rotate: false
+  xy: 130, 7
+  size: 126, 146
+  orig: 200, 200
+  offset: 35, 25
+  index: -1
+1_20
+  rotate: false
+  xy: 0, 0
+  size: 130, 153
+  orig: 200, 200
+  offset: 35, 33
+  index: -1
+1_21
+  rotate: false
+  xy: 346, 222
+  size: 134, 127
+  orig: 200, 200
+  offset: 36, 33
+  index: -1
+
+IceFprepare3.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_08
+  rotate: false
+  xy: 0, 125
+  size: 168, 170
+  orig: 200, 200
+  offset: 12, 20
+  index: -1
+1_13
+  rotate: false
+  xy: 168, 166
+  size: 116, 129
+  orig: 200, 200
+  offset: 40, 33
+  index: -1
+flash010
+  rotate: false
+  xy: 0, 0
+  size: 127, 125
+  orig: 128, 128
+  offset: 1, 2
+  index: -1

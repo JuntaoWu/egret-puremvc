@@ -1,0 +1,118 @@
+
+attack.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: true
+  xy: 295, 196
+  size: 49, 55
+  orig: 120, 120
+  offset: 27, 42
+  index: -1
+1_01
+  rotate: false
+  xy: 295, 245
+  size: 75, 75
+  orig: 120, 120
+  offset: 27, 42
+  index: -1
+1_02
+  rotate: false
+  xy: 0, 0
+  size: 92, 77
+  orig: 120, 120
+  offset: 27, 42
+  index: -1
+1_03
+  rotate: true
+  xy: 432, 419
+  size: 93, 78
+  orig: 120, 120
+  offset: 27, 42
+  index: -1
+1_04
+  rotate: true
+  xy: 202, 310
+  size: 93, 90
+  orig: 120, 120
+  offset: 27, 30
+  index: -1
+1_05
+  rotate: true
+  xy: 292, 320
+  size: 93, 90
+  orig: 120, 120
+  offset: 27, 30
+  index: -1
+1_06
+  rotate: false
+  xy: 382, 329
+  size: 93, 90
+  orig: 120, 120
+  offset: 27, 30
+  index: -1
+1_07
+  rotate: false
+  xy: 202, 220
+  size: 93, 90
+  orig: 120, 120
+  offset: 27, 30
+  index: -1
+1_08
+  rotate: false
+  xy: 333, 419
+  size: 99, 93
+  orig: 120, 120
+  offset: 21, 27
+  index: -1
+1_09
+  rotate: true
+  xy: 109, 293
+  size: 99, 93
+  orig: 120, 120
+  offset: 21, 27
+  index: -1
+1_10
+  rotate: false
+  xy: 229, 413
+  size: 104, 99
+  orig: 120, 120
+  offset: 16, 21
+  index: -1
+1_11
+  rotate: false
+  xy: 0, 283
+  size: 109, 109
+  orig: 120, 120
+  offset: 11, 11
+  index: -1
+1_12
+  rotate: false
+  xy: 120, 403
+  size: 109, 109
+  orig: 120, 120
+  offset: 11, 11
+  index: -1
+2_00
+  rotate: false
+  xy: 0, 392
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+3_00
+  rotate: false
+  xy: 0, 175
+  size: 108, 108
+  orig: 120, 120
+  offset: 6, 6
+  index: -1
+jian
+  rotate: false
+  xy: 0, 77
+  size: 98, 98
+  orig: 98, 98
+  offset: 0, 0
+  index: -1

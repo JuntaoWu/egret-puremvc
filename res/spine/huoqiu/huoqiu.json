@@ -1,0 +1,42 @@
+{
+"skeleton": { "hash": "c0uRS5IQncEqMBOmhoyFQMGdbfQ", "spine": "3.6.37", "width": 128, "height": 64, "images": "./daochu/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "骨骼", "parent": "root" }
+],
+"slots": [
+	{ "name": "huoqiu_00", "bone": "骨骼", "attachment": "huoqiu_07" }
+],
+"skins": {
+	"default": {
+		"huoqiu_00": {
+			"huoqiu_00": { "width": 128, "height": 64 },
+			"huoqiu_01": { "width": 128, "height": 64 },
+			"huoqiu_02": { "width": 128, "height": 64 },
+			"huoqiu_03": { "width": 128, "height": 64 },
+			"huoqiu_04": { "width": 128, "height": 64 },
+			"huoqiu_05": { "width": 128, "height": 64 },
+			"huoqiu_06": { "width": 128, "height": 64 },
+			"huoqiu_07": { "width": 128, "height": 64 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"huoqiu_00": {
+				"attachment": [
+					{ "time": 0, "name": "huoqiu_00" },
+					{ "time": 0.0333, "name": "huoqiu_01" },
+					{ "time": 0.0667, "name": "huoqiu_02" },
+					{ "time": 0.1, "name": "huoqiu_03" },
+					{ "time": 0.1333, "name": "huoqiu_04" },
+					{ "time": 0.1667, "name": "huoqiu_05" },
+					{ "time": 0.2, "name": "huoqiu_06" },
+					{ "time": 0.2333, "name": "huoqiu_07" }
+				]
+			}
+		}
+	}
+}
+}

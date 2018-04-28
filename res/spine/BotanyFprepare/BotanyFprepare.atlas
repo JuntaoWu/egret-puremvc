@@ -1,0 +1,89 @@
+
+BotanyFprepare.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 0, 341
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1
+1_02
+  rotate: false
+  xy: 0, 171
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1
+1_04
+  rotate: false
+  xy: 0, 1
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1
+1_06
+  rotate: true
+  xy: 340, 353
+  size: 158, 165
+  orig: 170, 170
+  offset: 2, 5
+  index: -1
+1_08
+  rotate: true
+  xy: 170, 91
+  size: 127, 128
+  orig: 170, 170
+  offset: 26, 19
+  index: -1
+1_10
+  rotate: true
+  xy: 298, 0
+  size: 111, 117
+  orig: 170, 170
+  offset: 27, 26
+  index: -1
+1_14
+  rotate: true
+  xy: 315, 111
+  size: 119, 144
+  orig: 170, 170
+  offset: 23, 11
+  index: -1
+1_16
+  rotate: true
+  xy: 340, 230
+  size: 123, 150
+  orig: 170, 170
+  offset: 22, 5
+  index: -1
+1_18
+  rotate: true
+  xy: 170, 218
+  size: 123, 145
+  orig: 170, 170
+  offset: 23, 22
+  index: -1
+4_00
+  rotate: false
+  xy: 170, 341
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1
+
+BotanyFprepare2.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_12
+  rotate: false
+  xy: 0, 0
+  size: 116, 124
+  orig: 170, 170
+  offset: 25, 20
+  index: -1

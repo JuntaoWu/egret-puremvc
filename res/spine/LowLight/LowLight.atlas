@@ -1,0 +1,20 @@
+
+LowLight.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 0, 54
+  size: 128, 74
+  orig: 128, 128
+  offset: 0, 25
+  index: -1
+2_00
+  rotate: false
+  xy: 0, 2
+  size: 83, 52
+  orig: 128, 128
+  offset: 23, 40
+  index: -1

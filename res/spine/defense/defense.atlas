@@ -1,0 +1,83 @@
+
+defense.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 0, 122
+  size: 66, 123
+  orig: 128, 128
+  offset: 31, 1
+  index: -1
+1_01
+  rotate: false
+  xy: 128, 263
+  size: 62, 123
+  orig: 128, 128
+  offset: 33, 1
+  index: -1
+1_02
+  rotate: true
+  xy: 227, 444
+  size: 57, 122
+  orig: 128, 128
+  offset: 36, 1
+  index: -1
+1_03
+  rotate: false
+  xy: 0, 0
+  size: 54, 122
+  orig: 128, 128
+  offset: 37, 1
+  index: -1
+1_04
+  rotate: false
+  xy: 66, 123
+  size: 40, 122
+  orig: 128, 128
+  offset: 44, 1
+  index: -1
+1_05
+  rotate: false
+  xy: 190, 264
+  size: 31, 122
+  orig: 128, 128
+  offset: 48, 1
+  index: -1
+1_06
+  rotate: true
+  xy: 227, 420
+  size: 24, 122
+  orig: 128, 128
+  offset: 52, 1
+  index: -1
+1_07
+  rotate: true
+  xy: 349, 485
+  size: 16, 122
+  orig: 128, 128
+  offset: 56, 1
+  index: -1
+2_01
+  rotate: false
+  xy: 0, 373
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+3_00
+  rotate: false
+  xy: 0, 245
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+pai
+  rotate: false
+  xy: 128, 386
+  size: 99, 115
+  orig: 99, 115
+  offset: 0, 0
+  index: -1

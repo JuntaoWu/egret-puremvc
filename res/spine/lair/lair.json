@@ -1,0 +1,124 @@
+{
+"skeleton": { "hash": "mqPQFYqsj2KvA2pX1CgB5WDajKw", "spine": "3.6.37", "width": 437, "height": 364, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "3-1", "parent": "root", "rotation": 25.25, "x": 36.44, "y": 94.91 },
+	{ "name": "3-2", "parent": "root", "rotation": -40.86, "x": 4.55, "y": 106.29, "scaleX": -0.8, "scaleY": 0.9 },
+	{ "name": "4-1", "parent": "3-1", "rotation": -24.53, "x": 13.59, "y": 0.01, "scaleX": 1.192, "scaleY": 1.121 },
+	{ "name": "4-2", "parent": "3-2", "rotation": -24.53, "x": 13.59, "y": 0.01, "scaleX": 1.192, "scaleY": 1.121 }
+],
+"slots": [
+	{ "name": "2", "bone": "root", "attachment": "2" },
+	{ "name": "3_0", "bone": "3-2", "attachment": "3_14" },
+	{ "name": "1", "bone": "root", "attachment": "1" },
+	{ "name": "3_00", "bone": "3-1", "attachment": "3_14" },
+	{ "name": "4_00", "bone": "4-1", "attachment": "4_00", "blend": "additive" },
+	{ "name": "4_0", "bone": "4-2", "attachment": "4_00", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"1": {
+			"1": { "x": -7.42, "y": 153.89, "width": 169, "height": 205 }
+		},
+		"2": {
+			"2": { "x": 26.58, "y": 123.39, "width": 437, "height": 364 }
+		},
+		"3_0": {
+			"3_00": { "x": 69.64, "width": 150, "height": 70 },
+			"3_01": { "x": 69.64, "width": 150, "height": 70 },
+			"3_02": { "x": 69.64, "width": 150, "height": 70 },
+			"3_03": { "x": 69.64, "width": 150, "height": 70 },
+			"3_04": { "x": 69.64, "width": 150, "height": 70 },
+			"3_05": { "x": 69.64, "width": 150, "height": 70 },
+			"3_06": { "x": 69.64, "width": 150, "height": 70 },
+			"3_07": { "x": 69.64, "width": 150, "height": 70 },
+			"3_08": { "x": 69.64, "width": 150, "height": 70 },
+			"3_09": { "x": 69.64, "width": 150, "height": 70 },
+			"3_10": { "x": 69.64, "width": 150, "height": 70 },
+			"3_11": { "x": 69.64, "width": 150, "height": 70 },
+			"3_12": { "x": 69.64, "width": 150, "height": 70 },
+			"3_13": { "x": 69.64, "width": 150, "height": 70 },
+			"3_14": { "x": 69.64, "width": 150, "height": 70 }
+		},
+		"3_00": {
+			"3_00": { "x": 69.64, "width": 150, "height": 70 },
+			"3_01": { "x": 69.64, "width": 150, "height": 70 },
+			"3_02": { "x": 69.64, "width": 150, "height": 70 },
+			"3_03": { "x": 69.64, "width": 150, "height": 70 },
+			"3_04": { "x": 69.64, "width": 150, "height": 70 },
+			"3_05": { "x": 69.64, "width": 150, "height": 70 },
+			"3_06": { "x": 69.64, "width": 150, "height": 70 },
+			"3_07": { "x": 69.64, "width": 150, "height": 70 },
+			"3_08": { "x": 69.64, "width": 150, "height": 70 },
+			"3_09": { "x": 69.64, "width": 150, "height": 70 },
+			"3_10": { "x": 69.64, "width": 150, "height": 70 },
+			"3_11": { "x": 69.64, "width": 150, "height": 70 },
+			"3_12": { "x": 69.64, "width": 150, "height": 70 },
+			"3_13": { "x": 69.64, "width": 150, "height": 70 },
+			"3_14": { "x": 69.64, "width": 150, "height": 70 }
+		},
+		"4_0": {
+			"4_00": { "width": 60, "height": 50 }
+		},
+		"4_00": {
+			"4_00": { "width": 60, "height": 50 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"3_00": {
+				"attachment": [
+					{ "time": 0, "name": "3_03" },
+					{ "time": 0.0333, "name": "3_04" },
+					{ "time": 0.0667, "name": "3_05" },
+					{ "time": 0.1, "name": "3_06" },
+					{ "time": 0.1333, "name": "3_07" },
+					{ "time": 0.1667, "name": "3_08" },
+					{ "time": 0.2, "name": "3_09" },
+					{ "time": 0.2333, "name": "3_10" },
+					{ "time": 0.2667, "name": "3_11" },
+					{ "time": 0.3, "name": "3_12" },
+					{ "time": 0.3333, "name": "3_13" },
+					{ "time": 0.3667, "name": "3_14" },
+					{ "time": 0.4, "name": "3_00" },
+					{ "time": 0.4333, "name": "3_01" },
+					{ "time": 0.4667, "name": "3_02" }
+				]
+			},
+			"3_0": {
+				"attachment": [
+					{ "time": 0, "name": "3_00" },
+					{ "time": 0.0333, "name": "3_01" },
+					{ "time": 0.0667, "name": "3_02" },
+					{ "time": 0.1, "name": "3_03" },
+					{ "time": 0.1333, "name": "3_04" },
+					{ "time": 0.1667, "name": "3_05" },
+					{ "time": 0.2, "name": "3_06" },
+					{ "time": 0.2333, "name": "3_07" },
+					{ "time": 0.2667, "name": "3_08" },
+					{ "time": 0.3, "name": "3_09" },
+					{ "time": 0.3333, "name": "3_10" },
+					{ "time": 0.3667, "name": "3_11" },
+					{ "time": 0.4, "name": "3_12" },
+					{ "time": 0.4333, "name": "3_13" },
+					{ "time": 0.4667, "name": "3_14" }
+				]
+			}
+		},
+		"bones": {
+			"3-1": {
+				"translate": [
+					{ "time": 0.0667, "x": 0, "y": 0.7 }
+				]
+			},
+			"3-2": {
+				"translate": [
+					{ "time": 0.0667, "x": 0, "y": -0.7 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,145 @@
+
+BotanyHit.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: true
+  xy: 404, 199
+  size: 54, 72
+  orig: 170, 170
+  offset: 70, 61
+  index: -1
+1_01
+  rotate: true
+  xy: 410, 24
+  size: 82, 88
+  orig: 170, 170
+  offset: 61, 60
+  index: -1
+1_03
+  rotate: false
+  xy: 296, 367
+  size: 108, 144
+  orig: 170, 170
+  offset: 39, 8
+  index: -1
+1_04
+  rotate: false
+  xy: 277, 46
+  size: 133, 147
+  orig: 170, 170
+  offset: 32, 5
+  index: -1
+1_05
+  rotate: false
+  xy: 139, 44
+  size: 138, 147
+  orig: 170, 170
+  offset: 26, 4
+  index: -1
+1_06
+  rotate: false
+  xy: 0, 191
+  size: 143, 150
+  orig: 170, 170
+  offset: 20, 0
+  index: -1
+1_08
+  rotate: false
+  xy: 280, 234
+  size: 124, 133
+  orig: 170, 170
+  offset: 21, 15
+  index: -1
+1_09
+  rotate: false
+  xy: 0, 42
+  size: 139, 149
+  orig: 170, 170
+  offset: 14, 7
+  index: -1
+1_10
+  rotate: false
+  xy: 170, 371
+  size: 126, 140
+  orig: 170, 170
+  offset: 29, 21
+  index: -1
+1_11
+  rotate: false
+  xy: 143, 193
+  size: 137, 148
+  orig: 170, 170
+  offset: 28, 18
+  index: -1
+1_12
+  rotate: true
+  xy: 410, 386
+  size: 125, 101
+  orig: 170, 170
+  offset: 27, 31
+  index: -1
+1_13
+  rotate: true
+  xy: 404, 253
+  size: 133, 105
+  orig: 170, 170
+  offset: 27, 29
+  index: -1
+1_17
+  rotate: false
+  xy: 410, 106
+  size: 98, 93
+  orig: 170, 170
+  offset: 26, 33
+  index: -1
+4_00
+  rotate: false
+  xy: 0, 341
+  size: 170, 170
+  orig: 170, 170
+  offset: 0, 0
+  index: -1
+
+BotanyHit2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_02
+  rotate: false
+  xy: 249, 249
+  size: 104, 104
+  orig: 170, 170
+  offset: 25, 41
+  index: -1
+1_07
+  rotate: false
+  xy: 0, 223
+  size: 135, 130
+  orig: 170, 170
+  offset: 25, 9
+  index: -1
+1_14
+  rotate: false
+  xy: 0, 118
+  size: 115, 105
+  orig: 170, 170
+  offset: 26, 30
+  index: -1
+1_15
+  rotate: false
+  xy: 135, 247
+  size: 114, 106
+  orig: 170, 170
+  offset: 26, 29
+  index: -1
+1_16
+  rotate: true
+  xy: 0, 2
+  size: 116, 103
+  orig: 170, 170
+  offset: 25, 32
+  index: -1

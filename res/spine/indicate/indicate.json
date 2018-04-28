@@ -1,0 +1,57 @@
+{
+"skeleton": { "hash": "BeS0g3jdNkyajoOLZycAvibjK8U", "spine": "3.6.37", "width": 53, "height": 72, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "zong", "parent": "root", "y": 33.86 },
+	{ "name": "骨骼", "parent": "zong" },
+	{ "name": "骨骼3", "parent": "zong" }
+],
+"slots": [
+	{ "name": "guangbiao2", "bone": "骨骼", "attachment": "guangbiao2" },
+	{ "name": "guangbiao1", "bone": "骨骼3", "attachment": "guangbiao1" }
+],
+"skins": {
+	"default": {
+		"guangbiao1": {
+			"guangbiao1": { "width": 49, "height": 68 }
+		},
+		"guangbiao2": {
+			"guangbiao2": { "width": 53, "height": 72 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"guangbiao1": {
+				"color": [
+					{ "time": 0, "color": "fffffffe" },
+					{ "time": 0.3, "color": "ffffff7c" },
+					{ "time": 0.6, "color": "fffffffe" },
+					{ "time": 0.9, "color": "ffffff7c" },
+					{ "time": 1.2, "color": "fffffffe" }
+				]
+			}
+		},
+		"bones": {
+			"zong": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6,
+						"x": 0,
+						"y": 18.85,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

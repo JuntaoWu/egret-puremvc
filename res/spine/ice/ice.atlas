@@ -1,0 +1,117 @@
+
+ice.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_00
+  rotate: true
+  xy: 354, 341
+  size: 167, 152
+  orig: 200, 160
+  offset: 14, 0
+  index: -1
+4_01
+  rotate: false
+  xy: 295, 38
+  size: 166, 152
+  orig: 200, 160
+  offset: 17, 0
+  index: -1
+4_06
+  rotate: false
+  xy: 292, 190
+  size: 171, 151
+  orig: 200, 160
+  offset: 16, 0
+  index: -1
+4_07
+  rotate: true
+  xy: 144, 13
+  size: 172, 151
+  orig: 200, 160
+  offset: 14, 0
+  index: -1
+4_08
+  rotate: false
+  xy: 0, 359
+  size: 176, 149
+  orig: 200, 160
+  offset: 12, 0
+  index: -1
+4_09
+  rotate: true
+  xy: 0, 0
+  size: 179, 144
+  orig: 200, 160
+  offset: 10, 0
+  index: -1
+4_10
+  rotate: true
+  xy: 0, 179
+  size: 180, 144
+  orig: 200, 160
+  offset: 10, 0
+  index: -1
+4_11
+  rotate: false
+  xy: 176, 362
+  size: 178, 146
+  orig: 200, 160
+  offset: 11, 0
+  index: -1
+4_12
+  rotate: true
+  xy: 144, 185
+  size: 174, 148
+  orig: 200, 160
+  offset: 13, 0
+  index: -1
+
+ice2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_02
+  rotate: false
+  xy: 150, 193
+  size: 162, 151
+  orig: 200, 160
+  offset: 23, 0
+  index: -1
+4_03
+  rotate: false
+  xy: 333, 348
+  size: 162, 147
+  orig: 200, 160
+  offset: 23, 2
+  index: -1
+4_04
+  rotate: true
+  xy: 0, 11
+  size: 165, 146
+  orig: 200, 160
+  offset: 22, 3
+  index: -1
+4_05
+  rotate: false
+  xy: 0, 344
+  size: 167, 151
+  orig: 200, 160
+  offset: 20, 0
+  index: -1
+4_13
+  rotate: true
+  xy: 0, 176
+  size: 168, 150
+  orig: 200, 160
+  offset: 13, 0
+  index: -1
+4_14
+  rotate: false
+  xy: 167, 344
+  size: 166, 151
+  orig: 200, 160
+  offset: 14, 0
+  index: -1

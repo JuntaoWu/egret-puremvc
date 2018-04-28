@@ -1,0 +1,28 @@
+{
+"skeleton": { "hash": "so/rk8TeJnq/2I3VZvh79HEq9tY", "spine": "3.6.37", "width": 184, "height": 31, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "2", "parent": "root", "rotation": 180 }
+],
+"slots": [
+	{ "name": "2", "bone": "2", "attachment": "2" }
+],
+"skins": {
+	"default": {
+		"2": {
+			"2": { "width": 184, "height": 31 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"bones": {
+			"2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

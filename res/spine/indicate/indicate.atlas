@@ -1,0 +1,20 @@
+
+indicate.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guangbiao1
+  rotate: false
+  xy: 51, 32
+  size: 47, 66
+  orig: 49, 68
+  offset: 1, 1
+  index: -1
+guangbiao2
+  rotate: false
+  xy: 0, 28
+  size: 51, 70
+  orig: 53, 72
+  offset: 1, 1
+  index: -1

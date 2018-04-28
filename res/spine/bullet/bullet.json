@@ -1,0 +1,28 @@
+{
+"skeleton": { "hash": "cOnD72s4KuSeJKfhpJszgALfMzE", "spine": "3.6.37", "width": 128, "height": 128, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "骨骼", "parent": "root" }
+],
+"slots": [
+	{ "name": "zidan", "bone": "骨骼", "color": "ffc938ff", "attachment": "zidan" }
+],
+"skins": {
+	"default": {
+		"zidan": {
+			"zidan": { "width": 128, "height": 128 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"zidan": {
+				"attachment": [
+					{ "time": 0, "name": "zidan" }
+				]
+			}
+		}
+	}
+}
+}

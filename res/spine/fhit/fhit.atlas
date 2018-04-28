@@ -1,0 +1,131 @@
+
+fhit.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3_00
+  rotate: false
+  xy: 465, 470
+  size: 34, 38
+  orig: 200, 200
+  offset: 85, 80
+  index: -1
+3_01
+  rotate: false
+  xy: 419, 257
+  size: 89, 112
+  orig: 200, 200
+  offset: 59, 68
+  index: -1
+3_03
+  rotate: true
+  xy: 0, 204
+  size: 158, 144
+  orig: 200, 200
+  offset: 26, 46
+  index: -1
+3_08
+  rotate: true
+  xy: 281, 70
+  size: 147, 132
+  orig: 200, 200
+  offset: 32, 30
+  index: -1
+3_09
+  rotate: true
+  xy: 144, 214
+  size: 148, 136
+  orig: 200, 200
+  offset: 31, 26
+  index: -1
+3_10
+  rotate: false
+  xy: 314, 369
+  size: 151, 139
+  orig: 200, 200
+  offset: 28, 23
+  index: -1
+3_11
+  rotate: true
+  xy: 0, 50
+  size: 154, 141
+  orig: 200, 200
+  offset: 25, 21
+  index: -1
+3_12
+  rotate: false
+  xy: 157, 365
+  size: 157, 143
+  orig: 200, 200
+  offset: 22, 19
+  index: -1
+3_13
+  rotate: false
+  xy: 0, 362
+  size: 157, 146
+  orig: 200, 200
+  offset: 21, 17
+  index: -1
+3_14
+  rotate: false
+  xy: 280, 217
+  size: 139, 148
+  orig: 200, 200
+  offset: 35, 14
+  index: -1
+3_15
+  rotate: false
+  xy: 141, 56
+  size: 140, 148
+  orig: 200, 200
+  offset: 34, 13
+  index: -1
+3_16
+  rotate: true
+  xy: 0, 15
+  size: 35, 148
+  orig: 200, 200
+  offset: 34, 13
+  index: -1
+
+fhit2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3_02
+  rotate: true
+  xy: 280, 306
+  size: 109, 135
+  orig: 200, 200
+  offset: 48, 52
+  index: -1
+3_04
+  rotate: false
+  xy: 0, 44
+  size: 136, 118
+  orig: 200, 200
+  offset: 36, 41
+  index: -1
+3_05
+  rotate: false
+  xy: 144, 294
+  size: 136, 121
+  orig: 200, 200
+  offset: 36, 40
+  index: -1
+3_06
+  rotate: false
+  xy: 0, 162
+  size: 141, 125
+  orig: 200, 200
+  offset: 34, 37
+  index: -1
+3_07
+  rotate: false
+  xy: 0, 287
+  size: 144, 128
+  orig: 200, 200
+  offset: 33, 34
+  index: -1

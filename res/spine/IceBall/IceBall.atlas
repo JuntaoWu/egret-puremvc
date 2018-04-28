@@ -1,0 +1,62 @@
+
+IceBall.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bingzhen_00
+  rotate: false
+  xy: 0, 207
+  size: 126, 45
+  orig: 128, 64
+  offset: 0, 8
+  index: -1
+bingzhen_01
+  rotate: false
+  xy: 126, 208
+  size: 126, 44
+  orig: 128, 64
+  offset: 0, 8
+  index: -1
+bingzhen_02
+  rotate: false
+  xy: 0, 77
+  size: 126, 42
+  orig: 128, 64
+  offset: 0, 7
+  index: -1
+bingzhen_03
+  rotate: false
+  xy: 0, 36
+  size: 126, 41
+  orig: 128, 64
+  offset: 0, 8
+  index: -1
+bingzhen_04
+  rotate: false
+  xy: 0, 119
+  size: 126, 44
+  orig: 128, 64
+  offset: 0, 8
+  index: -1
+bingzhen_05
+  rotate: false
+  xy: 126, 123
+  size: 126, 42
+  orig: 128, 64
+  offset: 0, 11
+  index: -1
+bingzhen_06
+  rotate: false
+  xy: 126, 165
+  size: 126, 43
+  orig: 128, 64
+  offset: 0, 10
+  index: -1
+bingzhen_07
+  rotate: false
+  xy: 0, 163
+  size: 126, 44
+  orig: 128, 64
+  offset: 0, 9
+  index: -1

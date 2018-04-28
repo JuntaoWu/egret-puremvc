@@ -1,0 +1,69 @@
+
+yhit.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+9_00
+  rotate: true
+  xy: 301, 208
+  size: 104, 120
+  orig: 200, 200
+  offset: 48, 40
+  index: -1
+9_01
+  rotate: false
+  xy: 282, 32
+  size: 115, 122
+  orig: 200, 200
+  offset: 43, 39
+  index: -1
+9_02
+  rotate: false
+  xy: 150, 29
+  size: 132, 125
+  orig: 200, 200
+  offset: 34, 43
+  index: -1
+9_03
+  rotate: false
+  xy: 301, 312
+  size: 148, 137
+  orig: 200, 200
+  offset: 27, 34
+  index: -1
+9_04
+  rotate: false
+  xy: 0, 7
+  size: 150, 146
+  orig: 200, 200
+  offset: 26, 26
+  index: -1
+9_05
+  rotate: false
+  xy: 0, 301
+  size: 151, 148
+  orig: 200, 200
+  offset: 26, 24
+  index: -1
+9_06
+  rotate: false
+  xy: 0, 153
+  size: 150, 148
+  orig: 200, 200
+  offset: 26, 23
+  index: -1
+9_07
+  rotate: false
+  xy: 151, 301
+  size: 150, 148
+  orig: 200, 200
+  offset: 26, 23
+  index: -1
+9_08
+  rotate: false
+  xy: 150, 154
+  size: 149, 147
+  orig: 200, 200
+  offset: 27, 24
+  index: -1

@@ -1,0 +1,84 @@
+{
+"skeleton": { "hash": "CsMf679LaMYWJ8+D2FwiXgEkHEs", "spine": "3.6.37", "width": 165.15, "height": 193.5, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "骨骼", "parent": "root", "scaleX": 0.9, "scaleY": 0.9 },
+	{ "name": "骨骼2", "parent": "骨骼", "rotation": 16.6, "x": -38.12, "y": 55.39, "scaleX": 1.607, "scaleY": 1.607 }
+],
+"slots": [
+	{ "name": "2", "bone": "骨骼", "attachment": "2" },
+	{ "name": "1_00", "bone": "骨骼2", "attachment": "1_14", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"1_00": {
+			"1_00": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 },
+			"1_02": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 },
+			"1_04": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 },
+			"1_06": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 },
+			"1_08": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 },
+			"1_10": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 },
+			"1_12": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 },
+			"1_14": { "x": -3.11, "y": 18.65, "width": 64, "height": 64 }
+		},
+		"2": {
+			"2": { "width": 128, "height": 129 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"1_00": {
+				"attachment": [
+					{ "time": 0, "name": "1_00" },
+					{ "time": 0.0333, "name": "1_02" },
+					{ "time": 0.0667, "name": "1_04" },
+					{ "time": 0.1, "name": "1_06" },
+					{ "time": 0.1333, "name": null },
+					{ "time": 0.1667, "name": "1_10" },
+					{ "time": 0.2, "name": "1_12" },
+					{ "time": 0.2333, "name": "1_14" },
+					{ "time": 0.2667, "name": "1_00" },
+					{ "time": 0.3, "name": null },
+					{ "time": 0.3333, "name": "1_04" },
+					{ "time": 0.3667, "name": "1_06" },
+					{ "time": 0.4, "name": "1_08" },
+					{ "time": 0.4333, "name": "1_10" },
+					{ "time": 0.4667, "name": "1_12" },
+					{ "time": 0.5, "name": "1_14" }
+				]
+			}
+		},
+		"bones": {
+			"骨骼2": {
+				"rotate": [
+					{ "time": 0, "angle": 56.15 }
+				],
+				"translate": [
+					{ "time": 0, "x": -3.57, "y": 19.28 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.0667, "x": 0.569, "y": 0.569 },
+					{ "time": 0.1333, "x": 1, "y": 1 },
+					{ "time": 0.2, "x": 0.569, "y": 0.569 },
+					{ "time": 0.2667, "x": 1, "y": 1 },
+					{ "time": 0.3333, "x": 0.569, "y": 0.569 },
+					{ "time": 0.4, "x": 1, "y": 1 },
+					{ "time": 0.4667, "x": 0.569, "y": 0.569 },
+					{ "time": 0.5, "x": 1, "y": 1 }
+				]
+			},
+			"骨骼": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.2333, "angle": -171.92 },
+					{ "time": 0.4333, "angle": 33.73 },
+					{ "time": 0.5, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

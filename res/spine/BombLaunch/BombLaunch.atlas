@@ -1,0 +1,138 @@
+
+BombLaunch.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_03
+  rotate: false
+  xy: 145, 20
+  size: 118, 146
+  orig: 230, 230
+  offset: 55, 37
+  index: -1
+1_04
+  rotate: true
+  xy: 0, 14
+  size: 160, 145
+  orig: 230, 230
+  offset: 51, 40
+  index: -1
+1_05
+  rotate: false
+  xy: 166, 358
+  size: 161, 154
+  orig: 230, 230
+  offset: 50, 37
+  index: -1
+1_06
+  rotate: false
+  xy: 0, 350
+  size: 166, 162
+  orig: 230, 230
+  offset: 45, 35
+  index: -1
+1_07
+  rotate: false
+  xy: 0, 174
+  size: 143, 176
+  orig: 230, 230
+  offset: 40, 27
+  index: -1
+1_08
+  rotate: true
+  xy: 327, 416
+  size: 96, 185
+  orig: 230, 230
+  offset: 35, 22
+  index: -1
+1_09
+  rotate: false
+  xy: 206, 166
+  size: 100, 192
+  orig: 230, 230
+  offset: 31, 19
+  index: -1
+1_10
+  rotate: true
+  xy: 306, 252
+  size: 90, 203
+  orig: 230, 230
+  offset: 47, 15
+  index: -1
+1_11
+  rotate: true
+  xy: 306, 167
+  size: 85, 205
+  orig: 230, 230
+  offset: 56, 11
+  index: -1
+1_12
+  rotate: true
+  xy: 306, 82
+  size: 85, 200
+  orig: 230, 230
+  offset: 61, 11
+  index: -1
+1_13
+  rotate: true
+  xy: 263, 0
+  size: 82, 193
+  orig: 230, 230
+  offset: 63, 11
+  index: -1
+1_14
+  rotate: true
+  xy: 327, 342
+  size: 74, 181
+  orig: 230, 230
+  offset: 70, 15
+  index: -1
+1_15
+  rotate: false
+  xy: 143, 188
+  size: 63, 162
+  orig: 230, 230
+  offset: 73, 25
+  index: -1
+1_17
+  rotate: false
+  xy: 456, 66
+  size: 23, 16
+  orig: 230, 230
+  offset: 104, 36
+  index: -1
+
+BombLaunch2.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 106, 142
+  size: 61, 113
+  orig: 230, 230
+  offset: 60, 63
+  index: -1
+1_01
+  rotate: false
+  xy: 0, 0
+  size: 65, 115
+  orig: 230, 230
+  offset: 55, 63
+  index: -1
+1_02
+  rotate: false
+  xy: 0, 115
+  size: 106, 140
+  orig: 230, 230
+  offset: 55, 39
+  index: -1
+1_16
+  rotate: false
+  xy: 167, 115
+  size: 28, 140
+  orig: 230, 230
+  offset: 103, 31
+  index: -1

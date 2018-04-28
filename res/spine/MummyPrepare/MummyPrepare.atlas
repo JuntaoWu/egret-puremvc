@@ -1,0 +1,158 @@
+
+MummyPrepare.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 0, 357
+  size: 216, 155
+  orig: 256, 256
+  offset: 20, 64
+  index: -1
+1_01
+  rotate: false
+  xy: 216, 335
+  size: 214, 177
+  orig: 256, 256
+  offset: 22, 48
+  index: -1
+1_02
+  rotate: false
+  xy: 0, 178
+  size: 213, 179
+  orig: 256, 256
+  offset: 23, 46
+  index: -1
+1_05
+  rotate: false
+  xy: 0, 0
+  size: 175, 178
+  orig: 256, 256
+  offset: 27, 46
+  index: -1
+1_06
+  rotate: false
+  xy: 175, 7
+  size: 146, 171
+  orig: 256, 256
+  offset: 38, 47
+  index: -1
+1_12
+  rotate: true
+  xy: 366, 184
+  size: 151, 142
+  orig: 256, 256
+  offset: 48, 60
+  index: -1
+1_15
+  rotate: false
+  xy: 213, 181
+  size: 153, 154
+  orig: 256, 256
+  offset: 35, 46
+  index: -1
+1_18
+  rotate: true
+  xy: 321, 2
+  size: 179, 137
+  orig: 256, 256
+  offset: 16, 40
+  index: -1
+1_19
+  rotate: false
+  xy: 430, 371
+  size: 11, 141
+  orig: 256, 256
+  offset: 184, 37
+  index: -1
+
+MummyPrepare2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_03
+  rotate: false
+  xy: 0, 333
+  size: 213, 179
+  orig: 256, 256
+  offset: 23, 46
+  index: -1
+1_04
+  rotate: false
+  xy: 0, 154
+  size: 203, 179
+  orig: 256, 256
+  offset: 24, 46
+  index: -1
+1_07
+  rotate: true
+  xy: 213, 224
+  size: 128, 160
+  orig: 256, 256
+  offset: 62, 48
+  index: -1
+1_08
+  rotate: true
+  xy: 373, 205
+  size: 137, 139
+  orig: 256, 256
+  offset: 59, 58
+  index: -1
+1_11
+  rotate: false
+  xy: 320, 76
+  size: 140, 129
+  orig: 256, 256
+  offset: 53, 69
+  index: -1
+1_13
+  rotate: false
+  xy: 0, 4
+  size: 160, 150
+  orig: 256, 256
+  offset: 44, 55
+  index: -1
+1_14
+  rotate: true
+  xy: 160, 7
+  size: 147, 160
+  orig: 256, 256
+  offset: 40, 49
+  index: -1
+1_16
+  rotate: false
+  xy: 213, 352
+  size: 161, 160
+  orig: 256, 256
+  offset: 29, 44
+  index: -1
+1_17
+  rotate: true
+  xy: 374, 342
+  size: 170, 132
+  orig: 256, 256
+  offset: 23, 44
+  index: -1
+
+MummyPrepare3.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_09
+  rotate: false
+  xy: 130, 134
+  size: 126, 122
+  orig: 256, 256
+  offset: 59, 69
+  index: -1
+1_10
+  rotate: false
+  xy: 0, 133
+  size: 130, 123
+  orig: 256, 256
+  offset: 57, 72
+  index: -1

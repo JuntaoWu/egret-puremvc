@@ -1,0 +1,62 @@
+
+huoqiu.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huoqiu_00
+  rotate: true
+  xy: 199, 164
+  size: 92, 55
+  orig: 128, 64
+  offset: 24, 4
+  index: -1
+huoqiu_01
+  rotate: false
+  xy: 0, 89
+  size: 93, 55
+  orig: 128, 64
+  offset: 23, 4
+  index: -1
+huoqiu_02
+  rotate: false
+  xy: 102, 201
+  size: 97, 55
+  orig: 128, 64
+  offset: 19, 4
+  index: -1
+huoqiu_03
+  rotate: false
+  xy: 0, 200
+  size: 102, 56
+  orig: 128, 64
+  offset: 14, 4
+  index: -1
+huoqiu_04
+  rotate: false
+  xy: 0, 144
+  size: 98, 56
+  orig: 128, 64
+  offset: 18, 4
+  index: -1
+huoqiu_05
+  rotate: true
+  xy: 0, 0
+  size: 89, 55
+  orig: 128, 64
+  offset: 27, 4
+  index: -1
+huoqiu_06
+  rotate: false
+  xy: 102, 148
+  size: 91, 53
+  orig: 128, 64
+  offset: 25, 6
+  index: -1
+huoqiu_07
+  rotate: true
+  xy: 55, 0
+  size: 89, 54
+  orig: 128, 64
+  offset: 26, 5
+  index: -1

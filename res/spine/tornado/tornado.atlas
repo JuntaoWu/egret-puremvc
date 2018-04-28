@@ -1,0 +1,62 @@
+
+tornado.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: true
+  xy: 110, 24
+  size: 123, 105
+  orig: 128, 128
+  offset: 2, 7
+  index: -1
+1_01
+  rotate: false
+  xy: 0, 376
+  size: 123, 116
+  orig: 128, 128
+  offset: 2, 0
+  index: -1
+1_02
+  rotate: false
+  xy: 0, 261
+  size: 122, 115
+  orig: 128, 128
+  offset: 2, 1
+  index: -1
+1_03
+  rotate: false
+  xy: 123, 379
+  size: 123, 113
+  orig: 128, 128
+  offset: 2, 2
+  index: -1
+1_04
+  rotate: false
+  xy: 0, 147
+  size: 122, 114
+  orig: 128, 128
+  offset: 3, 2
+  index: -1
+1_05
+  rotate: false
+  xy: 246, 380
+  size: 123, 112
+  orig: 128, 128
+  offset: 2, 4
+  index: -1
+1_06
+  rotate: false
+  xy: 369, 385
+  size: 123, 107
+  orig: 128, 128
+  offset: 2, 5
+  index: -1
+1_07
+  rotate: true
+  xy: 0, 24
+  size: 123, 110
+  orig: 128, 128
+  offset: 2, 6
+  index: -1

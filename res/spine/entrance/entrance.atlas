@@ -1,0 +1,95 @@
+
+entrance.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 0, 179
+  size: 237, 305
+  orig: 256, 308
+  offset: 4, 3
+  index: -1
+2_12
+  rotate: false
+  xy: 237, 0
+  size: 237, 237
+  orig: 256, 256
+  offset: 9, 6
+  index: -1
+2_14
+  rotate: true
+  xy: 237, 237
+  size: 247, 245
+  orig: 256, 256
+  offset: 6, 2
+  index: -1
+2_18
+  rotate: true
+  xy: 0, 135
+  size: 44, 197
+  orig: 256, 256
+  offset: 195, 39
+  index: -1
+
+entrance2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_01
+  rotate: false
+  xy: 0, 230
+  size: 218, 282
+  orig: 256, 308
+  offset: 21, 3
+  index: -1
+2_06
+  rotate: false
+  xy: 218, 266
+  size: 224, 246
+  orig: 256, 256
+  offset: 17, 4
+  index: -1
+2_08
+  rotate: false
+  xy: 0, 0
+  size: 237, 230
+  orig: 256, 256
+  offset: 15, 0
+  index: -1
+2_16
+  rotate: true
+  xy: 237, 33
+  size: 233, 229
+  orig: 256, 256
+  offset: 18, 7
+  index: -1
+
+entrance3.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2_02
+  rotate: true
+  xy: 232, 252
+  size: 211, 231
+  orig: 256, 256
+  offset: 25, 25
+  index: -1
+2_04
+  rotate: false
+  xy: 0, 6
+  size: 224, 230
+  orig: 256, 256
+  offset: 22, 14
+  index: -1
+2_10
+  rotate: false
+  xy: 0, 236
+  size: 232, 227
+  orig: 256, 256
+  offset: 9, 11
+  index: -1

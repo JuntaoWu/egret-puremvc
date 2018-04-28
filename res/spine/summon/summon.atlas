@@ -1,0 +1,145 @@
+
+summon.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 354, 95
+  size: 110, 73
+  orig: 180, 180
+  offset: 35, 0
+  index: -1
+1_01
+  rotate: false
+  xy: 354, 168
+  size: 114, 97
+  orig: 180, 180
+  offset: 33, 0
+  index: -1
+1_02
+  rotate: false
+  xy: 352, 265
+  size: 116, 121
+  orig: 180, 180
+  offset: 32, 0
+  index: -1
+1_03
+  rotate: false
+  xy: 236, 367
+  size: 116, 145
+  orig: 180, 180
+  offset: 32, 0
+  index: -1
+1_04
+  rotate: false
+  xy: 0, 0
+  size: 118, 158
+  orig: 180, 180
+  offset: 31, 0
+  index: -1
+1_05
+  rotate: false
+  xy: 0, 332
+  size: 118, 180
+  orig: 180, 180
+  offset: 31, 0
+  index: -1
+1_06
+  rotate: false
+  xy: 118, 342
+  size: 118, 170
+  orig: 180, 180
+  offset: 31, 0
+  index: -1
+1_07
+  rotate: false
+  xy: 0, 158
+  size: 118, 174
+  orig: 180, 180
+  offset: 31, 0
+  index: -1
+1_08
+  rotate: false
+  xy: 118, 180
+  size: 118, 162
+  orig: 180, 180
+  offset: 31, 8
+  index: -1
+1_09
+  rotate: false
+  xy: 118, 43
+  size: 118, 137
+  orig: 180, 180
+  offset: 31, 35
+  index: -1
+1_10
+  rotate: false
+  xy: 352, 386
+  size: 118, 126
+  orig: 180, 180
+  offset: 31, 44
+  index: -1
+1_11
+  rotate: false
+  xy: 236, 243
+  size: 116, 124
+  orig: 180, 180
+  offset: 32, 50
+  index: -1
+1_12
+  rotate: false
+  xy: 236, 0
+  size: 107, 125
+  orig: 180, 180
+  offset: 38, 54
+  index: -1
+1_13
+  rotate: false
+  xy: 343, 30
+  size: 69, 65
+  orig: 180, 180
+  offset: 60, 60
+  index: -1
+1_14
+  rotate: true
+  xy: 412, 29
+  size: 66, 63
+  orig: 180, 180
+  offset: 62, 65
+  index: -1
+1_16
+  rotate: false
+  xy: 118, 16
+  size: 25, 27
+  orig: 180, 180
+  offset: 100, 77
+  index: -1
+1_17
+  rotate: false
+  xy: 470, 490
+  size: 20, 22
+  orig: 180, 180
+  offset: 103, 84
+  index: -1
+2_05
+  rotate: false
+  xy: 236, 125
+  size: 118, 118
+  orig: 120, 120
+  offset: 1, 1
+  index: -1
+
+summon2.png
+size: 64,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_15
+  rotate: false
+  xy: 0, 2
+  size: 63, 61
+  orig: 180, 180
+  offset: 64, 71
+  index: -1

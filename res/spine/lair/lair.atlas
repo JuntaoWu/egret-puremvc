@@ -1,0 +1,138 @@
+
+lair.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: false
+  xy: 0, 147
+  size: 437, 364
+  orig: 437, 364
+  offset: 0, 0
+  index: -1
+3_00
+  rotate: true
+  xy: 437, 16
+  size: 150, 44
+  orig: 150, 70
+  offset: 0, 12
+  index: -1
+3_01
+  rotate: false
+  xy: 135, 60
+  size: 150, 43
+  orig: 150, 70
+  offset: 0, 12
+  index: -1
+3_02
+  rotate: false
+  xy: 135, 103
+  size: 150, 44
+  orig: 150, 70
+  offset: 0, 11
+  index: -1
+3_03
+  rotate: false
+  xy: 285, 103
+  size: 150, 44
+  orig: 150, 70
+  offset: 0, 11
+  index: -1
+3_04
+  rotate: false
+  xy: 285, 60
+  size: 150, 43
+  orig: 150, 70
+  offset: 0, 11
+  index: -1
+3_08
+  rotate: false
+  xy: 285, 18
+  size: 150, 42
+  orig: 150, 70
+  offset: 0, 13
+  index: -1
+3_09
+  rotate: false
+  xy: 135, 17
+  size: 150, 43
+  orig: 150, 70
+  offset: 0, 13
+  index: -1
+3_10
+  rotate: true
+  xy: 46, 3
+  size: 144, 44
+  orig: 150, 70
+  offset: 0, 13
+  index: -1
+3_11
+  rotate: true
+  xy: 437, 166
+  size: 149, 45
+  orig: 150, 70
+  offset: 0, 13
+  index: -1
+3_12
+  rotate: true
+  xy: 90, 5
+  size: 142, 45
+  orig: 150, 70
+  offset: 0, 13
+  index: -1
+3_13
+  rotate: true
+  xy: 0, 0
+  size: 147, 46
+  orig: 150, 70
+  offset: 0, 12
+  index: -1
+3_14
+  rotate: true
+  xy: 437, 315
+  size: 150, 46
+  orig: 150, 70
+  offset: 0, 12
+  index: -1
+4_00
+  rotate: false
+  xy: 437, 465
+  size: 57, 46
+  orig: 60, 50
+  offset: 2, 2
+  index: -1
+
+lair2.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 0, 44
+  size: 169, 205
+  orig: 169, 205
+  offset: 0, 0
+  index: -1
+3_05
+  rotate: false
+  xy: 0, 3
+  size: 150, 41
+  orig: 150, 70
+  offset: 0, 12
+  index: -1
+3_06
+  rotate: true
+  xy: 169, 99
+  size: 150, 40
+  orig: 150, 70
+  offset: 0, 13
+  index: -1
+3_07
+  rotate: true
+  xy: 209, 99
+  size: 150, 40
+  orig: 150, 70
+  offset: 0, 14
+  index: -1

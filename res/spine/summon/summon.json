@@ -1,0 +1,76 @@
+{
+"skeleton": { "hash": "fzSUGYbui37/tsy46WDEIczs6W8", "spine": "3.6.37", "width": 180, "height": 181.07, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "骨骼2", "parent": "root" },
+	{ "name": "骨骼3", "parent": "root" }
+],
+"slots": [
+	{ "name": "2_05", "bone": "骨骼3", "attachment": "2_05", "blend": "additive" },
+	{ "name": "1_00", "bone": "骨骼2", "attachment": "1_00", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"1_00": {
+			"1_00": { "y": 31.07, "width": 180, "height": 180 },
+			"1_01": { "y": 31.07, "width": 180, "height": 180 },
+			"1_02": { "y": 31.07, "width": 180, "height": 180 },
+			"1_03": { "y": 31.07, "width": 180, "height": 180 },
+			"1_04": { "y": 31.07, "width": 180, "height": 180 },
+			"1_05": { "y": 31.07, "width": 180, "height": 180 },
+			"1_06": { "y": 31.07, "width": 180, "height": 180 },
+			"1_07": { "y": 31.07, "width": 180, "height": 180 },
+			"1_08": { "y": 31.07, "width": 180, "height": 180 },
+			"1_09": { "y": 31.07, "width": 180, "height": 180 },
+			"1_10": { "y": 31.07, "width": 180, "height": 180 },
+			"1_11": { "y": 31.07, "width": 180, "height": 180 },
+			"1_12": { "y": 31.07, "width": 180, "height": 180 },
+			"1_13": { "y": 31.07, "width": 180, "height": 180 },
+			"1_14": { "y": 31.07, "width": 180, "height": 180 },
+			"1_15": { "y": 31.07, "width": 180, "height": 180 },
+			"1_16": { "y": 31.07, "width": 180, "height": 180 },
+			"1_17": { "y": 31.07, "width": 180, "height": 180 }
+		},
+		"2_05": {
+			"2_05": { "width": 120, "height": 120 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"1_00": {
+				"attachment": [
+					{ "time": 0, "name": "1_00" },
+					{ "time": 0.0333, "name": "1_01" },
+					{ "time": 0.0667, "name": "1_02" },
+					{ "time": 0.1, "name": "1_03" },
+					{ "time": 0.1333, "name": "1_04" },
+					{ "time": 0.1667, "name": "1_05" },
+					{ "time": 0.2, "name": "1_06" },
+					{ "time": 0.2333, "name": "1_07" },
+					{ "time": 0.2667, "name": "1_08" },
+					{ "time": 0.3, "name": "1_09" },
+					{ "time": 0.3333, "name": "1_10" },
+					{ "time": 0.3667, "name": "1_11" },
+					{ "time": 0.4, "name": "1_12" },
+					{ "time": 0.4333, "name": "1_13" },
+					{ "time": 0.4667, "name": "1_14" },
+					{ "time": 0.5, "name": "1_15" },
+					{ "time": 0.5333, "name": "1_16" },
+					{ "time": 0.5667, "name": "1_17" },
+					{ "time": 0.6, "name": null }
+				]
+			},
+			"2_05": {
+				"color": [
+					{ "time": 0, "color": "ffffff6a" },
+					{ "time": 0.1667, "color": "fffffffe", "curve": "stepped" },
+					{ "time": 0.3667, "color": "fffffffe" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				]
+			}
+		}
+	}
+}
+}

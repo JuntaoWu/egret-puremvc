@@ -1,0 +1,20 @@
+
+winnower_2.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 0, 134
+  size: 112, 112
+  orig: 114, 114
+  offset: 1, 1
+  index: -1
+2
+  rotate: false
+  xy: 0, 0
+  size: 77, 134
+  orig: 79, 136
+  offset: 1, 1
+  index: -1

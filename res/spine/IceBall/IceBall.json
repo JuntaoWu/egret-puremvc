@@ -1,0 +1,42 @@
+{
+"skeleton": { "hash": "0NseSdX421zf4hi26f0Gi8H7RN4", "spine": "3.6.37", "width": 153.6, "height": 80, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "骨骼", "parent": "root", "scaleX": 1.2, "scaleY": 1.25 }
+],
+"slots": [
+	{ "name": "bingzhen_00", "bone": "骨骼", "attachment": "bingzhen_07" }
+],
+"skins": {
+	"default": {
+		"bingzhen_00": {
+			"bingzhen_00": { "width": 128, "height": 64 },
+			"bingzhen_01": { "width": 128, "height": 64 },
+			"bingzhen_02": { "width": 128, "height": 64 },
+			"bingzhen_03": { "width": 128, "height": 64 },
+			"bingzhen_04": { "width": 128, "height": 64 },
+			"bingzhen_05": { "width": 128, "height": 64 },
+			"bingzhen_06": { "width": 128, "height": 64 },
+			"bingzhen_07": { "width": 128, "height": 64 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"bingzhen_00": {
+				"attachment": [
+					{ "time": 0, "name": "bingzhen_00" },
+					{ "time": 0.0333, "name": "bingzhen_01" },
+					{ "time": 0.0667, "name": "bingzhen_02" },
+					{ "time": 0.1, "name": "bingzhen_03" },
+					{ "time": 0.1333, "name": "bingzhen_04" },
+					{ "time": 0.1667, "name": "bingzhen_05" },
+					{ "time": 0.2, "name": "bingzhen_06" },
+					{ "time": 0.2333, "name": "bingzhen_07" }
+				]
+			}
+		}
+	}
+}
+}

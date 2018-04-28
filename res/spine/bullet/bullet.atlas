@@ -1,0 +1,13 @@
+
+bullet.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zidan
+  rotate: false
+  xy: 0, 62
+  size: 110, 48
+  orig: 128, 128
+  offset: 11, 40
+  index: -1

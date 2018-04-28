@@ -1,0 +1,111 @@
+
+BotanyBall.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 0, 44
+  size: 62, 84
+  orig: 70, 100
+  offset: 7, 3
+  index: -1
+1_01
+  rotate: false
+  xy: 0, 412
+  size: 63, 97
+  orig: 70, 100
+  offset: 6, 3
+  index: -1
+1_02
+  rotate: false
+  xy: 0, 315
+  size: 63, 97
+  orig: 70, 100
+  offset: 6, 3
+  index: -1
+1_03
+  rotate: false
+  xy: 63, 412
+  size: 62, 97
+  orig: 70, 100
+  offset: 6, 3
+  index: -1
+1_04
+  rotate: false
+  xy: 0, 220
+  size: 62, 95
+  orig: 70, 100
+  offset: 6, 3
+  index: -1
+1_05
+  rotate: false
+  xy: 318, 420
+  size: 63, 89
+  orig: 70, 100
+  offset: 6, 3
+  index: -1
+1_06
+  rotate: false
+  xy: 190, 420
+  size: 64, 89
+  orig: 70, 100
+  offset: 5, 3
+  index: -1
+1_07
+  rotate: false
+  xy: 254, 420
+  size: 64, 89
+  orig: 70, 100
+  offset: 5, 3
+  index: -1
+1_08
+  rotate: false
+  xy: 125, 420
+  size: 65, 89
+  orig: 70, 100
+  offset: 3, 3
+  index: -1
+1_09
+  rotate: false
+  xy: 444, 425
+  size: 65, 84
+  orig: 70, 100
+  offset: 2, 3
+  index: -1
+1_10
+  rotate: false
+  xy: 381, 421
+  size: 63, 88
+  orig: 70, 100
+  offset: 3, 3
+  index: -1
+1_11
+  rotate: false
+  xy: 0, 128
+  size: 59, 92
+  orig: 70, 100
+  offset: 7, 3
+  index: -1
+1_12
+  rotate: false
+  xy: 63, 317
+  size: 57, 95
+  orig: 70, 100
+  offset: 9, 3
+  index: -1
+1_13
+  rotate: true
+  xy: 207, 362
+  size: 58, 80
+  orig: 70, 100
+  offset: 9, 3
+  index: -1
+1_14
+  rotate: true
+  xy: 125, 360
+  size: 60, 82
+  orig: 70, 100
+  offset: 8, 3
+  index: -1

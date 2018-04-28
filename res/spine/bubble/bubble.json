@@ -1,0 +1,85 @@
+{
+"skeleton": { "hash": "yt3z1dCoWiAnevepnz4AFf7O6S4", "spine": "3.6.37", "width": 750, "height": 1334, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "6", "parent": "root", "x": 8.85, "scaleX": 0.579, "scaleY": 0.579 },
+	{ "name": "7", "parent": "root", "x": -2.95, "scaleX": 0.8, "scaleY": 0.8 }
+],
+"slots": [
+	{ "name": "6_00", "bone": "6", "attachment": "6_00" },
+	{ "name": "7_00", "bone": "7", "attachment": "7_00" }
+],
+"skins": {
+	"default": {
+		"6_00": {
+			"6_00": { "width": 110, "height": 50 },
+			"6_02": { "width": 110, "height": 50 },
+			"6_04": { "width": 110, "height": 50 },
+			"6_06": { "width": 110, "height": 50 },
+			"6_08": { "width": 110, "height": 50 },
+			"6_10": { "width": 110, "height": 50 },
+			"6_12": { "width": 110, "height": 50 },
+			"6_14": { "width": 110, "height": 50 }
+		},
+		"7_00": {
+			"7_00": { "width": 90, "height": 50 },
+			"7_02": { "width": 90, "height": 50 },
+			"7_04": { "width": 90, "height": 50 },
+			"7_06": { "width": 90, "height": 50 },
+			"7_08": { "width": 90, "height": 50 },
+			"7_10": { "width": 90, "height": 50 },
+			"7_12": { "width": 90, "height": 50 },
+			"7_14": { "width": 90, "height": 50 },
+			"7_16": { "width": 90, "height": 50 }
+		}
+	}
+},
+"animations": {
+	"play": {
+		"slots": {
+			"6_00": {
+				"attachment": [
+					{ "time": 0, "name": "6_00" },
+					{ "time": 0.0667, "name": "6_02" },
+					{ "time": 0.1333, "name": "6_04" },
+					{ "time": 0.2, "name": "6_06" },
+					{ "time": 0.2667, "name": "6_08" },
+					{ "time": 0.3333, "name": "6_10" },
+					{ "time": 0.4, "name": "6_12" },
+					{ "time": 0.4667, "name": "6_14" },
+					{ "time": 0.5333, "name": null },
+					{ "time": 1.0667, "name": null }
+				]
+			},
+			"7_00": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.2, "name": "7_00" },
+					{ "time": 0.2667, "name": "7_02" },
+					{ "time": 0.3333, "name": "7_04" },
+					{ "time": 0.4, "name": "7_06" },
+					{ "time": 0.4667, "name": "7_08" },
+					{ "time": 0.5333, "name": "7_10" },
+					{ "time": 0.6, "name": "7_12" },
+					{ "time": 0.6667, "name": "7_14" },
+					{ "time": 0.7333, "name": "7_16" },
+					{ "time": 0.8, "name": null },
+					{ "time": 1.0667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 5.95 }
+				]
+			},
+			"7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 5.95 }
+				]
+			}
+		}
+	}
+}
+}

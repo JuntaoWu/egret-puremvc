@@ -1,0 +1,132 @@
+
+mangonel.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: false
+  xy: 0, 0
+  size: 105, 81
+  orig: 115, 115
+  offset: 10, 17
+  index: -1
+1_01
+  rotate: false
+  xy: 391, 414
+  size: 103, 83
+  orig: 115, 115
+  offset: 8, 16
+  index: -1
+1_02
+  rotate: false
+  xy: 181, 296
+  size: 103, 94
+  orig: 115, 115
+  offset: 6, 14
+  index: -1
+1_03
+  rotate: false
+  xy: 286, 391
+  size: 105, 106
+  orig: 115, 115
+  offset: 5, 9
+  index: -1
+1_04
+  rotate: false
+  xy: 181, 390
+  size: 105, 107
+  orig: 115, 115
+  offset: 5, 8
+  index: -1
+1_05
+  rotate: false
+  xy: 0, 81
+  size: 107, 105
+  orig: 115, 115
+  offset: 4, 10
+  index: -1
+1_06
+  rotate: false
+  xy: 0, 186
+  size: 110, 104
+  orig: 115, 115
+  offset: 3, 11
+  index: -1
+1_07
+  rotate: true
+  xy: 110, 187
+  size: 103, 76
+  orig: 115, 115
+  offset: 12, 19
+  index: -1
+2_00
+  rotate: false
+  xy: 266, 81
+  size: 58, 57
+  orig: 70, 70
+  offset: 6, 7
+  index: -1
+3_00
+  rotate: false
+  xy: 186, 216
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+3_02
+  rotate: false
+  xy: 186, 138
+  size: 80, 78
+  orig: 80, 80
+  offset: 0, 1
+  index: -1
+3_04
+  rotate: false
+  xy: 107, 28
+  size: 78, 78
+  orig: 80, 80
+  offset: 2, 1
+  index: -1
+3_06
+  rotate: false
+  xy: 266, 138
+  size: 78, 78
+  orig: 80, 80
+  offset: 2, 1
+  index: -1
+3_08
+  rotate: false
+  xy: 186, 58
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+3_10
+  rotate: false
+  xy: 107, 106
+  size: 79, 80
+  orig: 80, 80
+  offset: 1, 0
+  index: -1
+3_12
+  rotate: false
+  xy: 391, 334
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+3_14
+  rotate: false
+  xy: 266, 216
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 0, 290
+  size: 181, 207
+  orig: 256, 256
+  offset: 32, 19
+  index: -1
