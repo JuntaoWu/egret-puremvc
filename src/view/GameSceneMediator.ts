@@ -48,7 +48,7 @@ module game {
                     break;
                 }
                 case GridProxy.SKILL_APPLIED: {
-                    this.gameScene.applySkill(data);
+                    this.gameScene.applySkill(data).catch(reject => { });
                 }
             }
         }

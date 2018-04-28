@@ -77,7 +77,7 @@ module game {
 
 					if (nextTile && nextTile.type != tile.type) {
 						//发动攻击
-						this.applySkill(tile, nextTile);
+						this.applySkill(tile, nextTile, direction);
 						this.mergedTile(tile, nextTile);
 
 						// tile.x = nextTile.x;
@@ -294,8 +294,8 @@ module game {
 			this.sendNotification(GridProxy.TILE_MERGED, tileTo.clone());
 		}
 
-		private applySkill(tileFrom: TileVO, tileTo: TileVO): void {
-			this.sendNotification(GridProxy.SKILL_APPLIED, { tileFrom: tileFrom.clone(), tileTo: tileTo.clone() });
+		private applySkill(tileFrom: TileVO, tileTo: TileVO, direction: number): void {
+			this.sendNotification(GridProxy.SKILL_APPLIED, { tileFrom: tileFrom.clone(), tileTo: tileTo.clone(), direction: direction });
 		}
 
 		/**

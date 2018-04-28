@@ -31,6 +31,7 @@ module game {
          */
         public createTile(tileVO: TileVO): void {
             let tile: TileUI = <TileUI>(ObjectPool.getPool("game.TileUI").borrowObject());  //从对象池创建
+            tile.unitType = tileVO.type;
             tile.value = tileVO.value;
             tile.location.x = tileVO.x;
             tile.location.y = tileVO.y;
@@ -64,10 +65,13 @@ module game {
             return null;
         }
 
-        public applySkill({tileFrom, tileTo}: {tileFrom: TileVO, tileTo: TileVO}): void {
+        public async applySkill({tileFrom, tileTo, direction}: {tileFrom: TileVO, tileTo: TileVO, direction: number}) : Promise<any> {
             var tileToUI: TileUI = this.getTileUI(tileTo.x, tileTo.y);
-            if(tileToUI) {
-                tileToUI.playEffect(tileFrom.skill);
+            var tileFromUI: TileUI = this.getTileUI(tileFrom.x, tileFrom.y);
+            if(tileFromUI && tileToUI) {
+                await tileFromUI.playAttack(direction);
+                await tileToUI.playEffect(tileFrom.skill);
+                await tileToUI.playAttacked();
             }
         }
 

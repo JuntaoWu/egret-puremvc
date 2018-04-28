@@ -12,7 +12,7 @@ var game_file_list = [
 	"libs/modules/dragonBones/dragonBones.js",
 	"libs/modules/puremvc/puremvc.js",
 	"bin-debug/model/common/Level.js",
-	"bin-debug/ApplicationFacade.js",
+	"bin-debug/AssetAdapter.js",
 	"bin-debug/AutoScreenAdapter.js",
 	"bin-debug/LoadingUI.js",
 	"bin-debug/Main.js",
@@ -31,7 +31,7 @@ var game_file_list = [
 	"bin-debug/model/GridProxy.js",
 	"bin-debug/model/common/CommonData.js",
 	"bin-debug/model/common/constants.js",
-	"bin-debug/AssetAdapter.js",
+	"bin-debug/view/panel/TileUI.js",
 	"bin-debug/model/vos/TileVO.js",
 	"bin-debug/utils/DragonBones.js",
 	"bin-debug/utils/ObjectPool.js",
@@ -50,7 +50,7 @@ var game_file_list = [
 	"bin-debug/view/panel/HowtoplayWindow.js",
 	"bin-debug/view/panel/SettingWindow.js",
 	"bin-debug/view/panel/StartScreen.js",
-	"bin-debug/view/panel/TileUI.js",
+	"bin-debug/ApplicationFacade.js",
 	//----auto game_file_list end----
 ];
 

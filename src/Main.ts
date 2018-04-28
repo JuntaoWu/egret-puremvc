@@ -27,12 +27,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////
 
-
 class Main extends eui.UILayer {
 
-    /**
-     * 加载进度界面
-     */
     private loadingView: LoadingUI;
 
     public constructor() {
@@ -60,8 +56,6 @@ class Main extends eui.UILayer {
         egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
         egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
 
-        //this.stage.scaleMode = egret.StageScaleMode.SHOW_ALL;
-
         this.runGame().catch(e => {
             console.log(e);
         });
@@ -73,18 +67,20 @@ class Main extends eui.UILayer {
         this.createGameScene();
     }
 
-    private async loadResource() {
+    private async loadResource(): Promise<any> {
+
         try {
+            await RES.loadConfig("resource/resource.json", "resource/");
+            await this.loadTheme();
+            await RES.loadGroup("loading", 1);
             const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
 
-            await RES.loadConfig("resource/resource.json", "resource/");
-            await this.loadTheme();
-
-            await RES.loadGroup("loading", 1);
             await RES.loadGroup("preload", 0, loadingView);
 
-            this.stage.removeChild(loadingView);
+            egret.Tween.get(loadingView).to({ alpha: 0 }, 1500).call(() => {
+                this.stage.removeChild(loadingView);
+            });
         }
         catch (e) {
             console.error(e);
@@ -99,22 +95,17 @@ class Main extends eui.UILayer {
             theme.addEventListener(eui.UIEvent.COMPLETE, () => {
                 resolve();
             }, this);
-        })
+        });
     }
 
     /**
      * 创建游戏场景
      */
     private createGameScene(): void {
-        //初始化UIStage
         //todo: check if new AppContainer must be constructed after Resource Loaded.
-        this.appContainer = new game.AppContainer();
-        this.addChild(this.appContainer);
+        const appContainer = new game.AppContainer();
+        this.addChild(appContainer);
 
-        //设置模态层透明度,写在这里是因为初始化的时候UIStage还没初始化完毕，直接设置会报错
-        // eui.PopUpManager.modalAlpha = 0;
-
-        game.ApplicationFacade.getInstance().startUp(this.appContainer);
-        game.ApplicationFacade.getInstance().sendNotification(game.SceneCommand.CHANGE, 1);
+        game.ApplicationFacade.getInstance().startUp(appContainer);
     }
 }

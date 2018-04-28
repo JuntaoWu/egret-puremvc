@@ -7,6 +7,7 @@ module game {
 
         public constructor() {
             super();
+            this.alpha = 0;
         }
 
         /**
@@ -14,6 +15,7 @@ module game {
          */
         public enterStartScreen(): void {
             this.addChild(this.startScreen);
+            egret.Tween.get(this).to({ alpha: 1 }, 1500);
         }
 
         /**

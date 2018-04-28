@@ -28,23 +28,39 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 
-class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
+class LoadingUI extends eui.Component implements RES.PromiseTaskReporter {
 
-    private textField: egret.TextField;
+    private labelText: egret.TextField;
+    private imageLoading1: egret.Bitmap;
+    private imageLoading2: egret.Bitmap;
+    private imageLoading3: egret.Bitmap;
+    private imageLoading4: egret.Bitmap;
+
+    private imageLoadings: Array<egret.Bitmap> = [];
 
     public constructor() {
         super();
-        this.createView();
-        // this.skinName = "LoadingUISkin";
+        this.skinName = "skin.loadingUISkin";
+        this.addEventListener(eui.UIEvent.CREATION_COMPLETE, this.createCompleteEvent, this);
     }
 
-    private createView(): void {
-        this.textField = new egret.TextField();
-        this.addChild(this.textField);
-        this.textField.y = 300;
-        this.textField.width = 640;
-        this.textField.height = 100;
-        this.textField.textAlign = "center";
+    public createCompleteEvent(event: eui.UIEvent): void {
+        this.removeEventListener(eui.UIEvent.CREATION_COMPLETE, this.createCompleteEvent, this);
+        this.imageLoadings = [
+            this.imageLoading1,
+            this.imageLoading2,
+            this.imageLoading3,
+            this.imageLoading4,
+        ];
+        this.playEffect();
+    }
+
+    public playEffect(index: number = 0) {
+        egret.Tween.get(this.imageLoadings[index]).to({ scaleX: 1.2, scaleY: 1.2 }, 150).call(() => {
+            egret.Tween.get(this.imageLoadings[index]).to({ scaleX: 1, scaleY: 1 }).call(() => {
+                this.playEffect(++index % 4);
+            });
+        });
     }
 
     // /**
@@ -60,6 +76,6 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
     // }
 
     public onProgress(current: number, total: number): void {
-        this.textField.text = `Loading...${current}/${total}`;
+        this.labelText.text = `Loading...${current}/${total}`;
     }
 }

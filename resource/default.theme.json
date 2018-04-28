@@ -27,14 +27,6 @@
 		"resource/components/ReturnButtonSkin.exml",
 		"resource/components/SettingButtonSkin.exml",
 		"resource/components/SoundButtonSkin.exml",
-		"resource/containers/AboutSkin.exml",
-		"resource/containers/EndScreenSkin.exml",
-		"resource/containers/GameMenuSkin.exml",
-		"resource/containers/HowtoPlaySkin.exml",
-		"resource/containers/LoadingUISkin.exml",
-		"resource/containers/MainGameUISkin.exml",
-		"resource/containers/SettingScreenSkin.exml",
-		"resource/containers/StartScreenSkin.exml",
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -47,7 +39,15 @@
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml",
+		"resource/containers/AboutSkin.exml",
+		"resource/containers/EndScreenSkin.exml",
+		"resource/containers/GameMenuSkin.exml",
+		"resource/containers/HowtoPlaySkin.exml",
+		"resource/containers/LoadingUISkin.exml",
+		"resource/containers/MainGameUISkin.exml",
+		"resource/containers/SettingScreenSkin.exml",
+		"resource/containers/StartScreenSkin.exml"
 	],
 	"path": "resource/default.theme.json"
 }

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="skin.loadingUISkin" minHeight="230" minWidth="450" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*">
-	<e:Image left="0" right="0" bottom="0" top="0" source="loading_logo" scale9Grid="2,2,12,12" />
-	<e:ProgressBar id="progressBar" skinName="skin.components.ProgressBarSkin" width="416" slideDuration="0" x="112" y="630"/>
-	<e:Label text="Loading..." size="14" textColor="0" fontFamily="Arial" y="600" horizontalCenter="0.5"/>
+	<e:Image left="0" right="0" bottom="0" top="0" source="loading-background" scale9Grid="2,2,12,12" />
+	<e:Label id="labelText" text="Loading..." size="60" fontFamily="Arial" y="680" horizontalCenter="0"
+	         textColor="0xffffff" />
+	<e:Image id="imageLoading1" source="loading(1)" x="160" bottom="100" />
+	<e:Image id="imageLoading2" source="loading(2)" x="408" bottom="100" />
+	<e:Image id="imageLoading3" source="loading(3)" x="610" bottom="100" />
+	<e:Image id="imageLoading4" source="loading(4)" x="837" bottom="100" />
 </e:Skin>

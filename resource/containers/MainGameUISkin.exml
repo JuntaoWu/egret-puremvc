@@ -3,5 +3,5 @@
 	<w:Config id="162fae1d2c0"/>
 	<e:Image left="0" right="0" bottom="0" top="0" source="sence_background" />
 	<game:GameMenuUI id="gameMenuUI" skinName="skin.gameMenuSkin" />
-	<game:GameScene id="gameSceneUI" left="30" right="30" top="350" bottom="100" />
+	<game:GameScene id="gameSceneUI" left="50" right="50" top="580" bottom="100" />
 </e:Skin>
